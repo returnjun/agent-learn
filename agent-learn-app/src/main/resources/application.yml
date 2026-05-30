@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: agent-learn-app
+  profiles:
+    active: dev
