@@ -56,7 +56,7 @@ public class AiAgentTest {
 
         OpenAiApi openAiApi = OpenAiApi.builder()
                 .baseUrl("https://api2.aigcbest.top")
-                .apiKey("sk-qN3s0oXo3UkMbQpfdB6GbxpaPXSRtcVR0ib3ic7X2jIIupMq")
+                .apiKey("sk-OjRkkYqhgZvLgmrPFAMFyIz2AjIMEcvB8Pdo4vfX8PkTVQWM")
                 .completionsPath("v1/chat/completions")
                 .embeddingsPath("v1/embeddings")
                 .build();

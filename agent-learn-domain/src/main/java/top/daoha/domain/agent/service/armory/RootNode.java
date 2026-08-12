@@ -28,14 +28,14 @@ public class RootNode extends AbstractArmorySupport{
 
     @Override
     protected void multiThread(ArmoryCommandEntity requestParameter, DefaultArmoryStrategyFactory.DynamicContext dynamicContext) throws ExecutionException, InterruptedException, TimeoutException {
-        // 通过策略加载数据。这和之前的区别其实就是这里的commandType可以使用业务层面的说法了，api，model等不用直接写bean的名字了
-        // 获取命令；不同的命令类型，对应不同的数据加载策略
-        String commandType = requestParameter.getCommandType();
-
-        // 获取策略
-        AiAgentEnumVO aiAgentEnumVO = AiAgentEnumVO.getByCode(commandType);
-        String loadDataStrategyKey = aiAgentEnumVO.getLoadDataStrategy();
-
+//        // 通过策略加载数据。这和之前的区别其实就是这里的commandType可以使用业务层面的说法了，api，model等不用直接写bean的名字了
+//        // 获取命令；不同的命令类型，对应不同的数据加载策略
+//        String commandType = requestParameter.getCommandType();
+//
+//        // 获取策略
+//        AiAgentEnumVO aiAgentEnumVO = AiAgentEnumVO.getByCode(commandType);
+//        String loadDataStrategyKey = aiAgentEnumVO.getLoadDataStrategy();
+        String loadDataStrategyKey = requestParameter.getLoadDataStrategy();
         // 加载数据
         ILoadDataStrategy loadDataStrategy = loadDataStrategyMap.get(loadDataStrategyKey);
         loadDataStrategy.loadData(requestParameter, dynamicContext);

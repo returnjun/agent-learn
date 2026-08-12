@@ -63,4 +63,11 @@ public abstract class AbstractArmorySupport extends AbstractMultiThreadStrategyR
         return (T) applicationContext.getBean(beanName);
     }
 
+    protected String beanName(String id) {
+        return null;
+    }
+
+    protected String dataName() {
+        return null;
+    }
 }

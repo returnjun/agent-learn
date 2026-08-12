@@ -17,7 +17,7 @@ spring:
   ai:
     openai:
       base-url: https://api2.aigcbest.top
-      api-key: sk-qN3s0oXo3UkMbQpfdB6GbxpaPXSRtcVR0ib3ic7X2jIIupMq
+      api-key: sk-OjRkkYqhgZvLgmrPFAMFyIz2AjIMEcvB8Pdo4vfX8PkTVQWM
       embedding:
         options:
           model: text-embedding-3-small
