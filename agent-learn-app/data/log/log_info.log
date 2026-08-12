@@ -1,0 +1,994 @@
+26-08-11.08:48:02.137 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 40364 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.08:48:02.140 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.08:48:06.615 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.08:48:06.623 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.08:48:06.623 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.08:48:07.243 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.08:48:08.212 [main            ] INFO  AgentTest              - Started AgentTest in 6.963 seconds (process running for 9.384)
+26-08-11.08:48:09.619 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.08:48:09.619 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.08:48:09.620 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.08:48:09.620 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.08:48:09.621 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.08:48:09.622 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.09:30:27.075 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.09:30:27.761 [pool-2-thread-4 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@8166ec3
+26-08-11.09:30:27.764 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.09:38:22.449 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=6m44s660ms999µs100ns).
+26-08-11.09:38:43.032 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.09:38:43.106 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.09:39:10.785 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 46796 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.09:39:10.787 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.09:39:14.642 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.09:39:14.649 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.09:39:14.649 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.09:39:15.644 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.09:39:16.687 [main            ] INFO  AgentTest              - Started AgentTest in 6.775 seconds (process running for 9.12)
+26-08-11.09:39:17.767 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.09:39:17.767 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.09:39:17.768 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.09:39:17.768 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.09:39:17.769 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.09:39:17.770 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.09:39:35.198 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.09:39:35.565 [pool-2-thread-6 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@36138127
+26-08-11.09:39:35.567 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.09:41:12.090 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1m25s690ms509µs300ns).
+26-08-11.09:41:12.150 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.09:41:12.179 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.14:52:58.860 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 47940 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.14:52:58.862 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.14:53:01.766 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.14:53:01.771 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.14:53:01.771 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.14:53:02.460 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.14:53:03.486 [main            ] INFO  AgentTest              - Started AgentTest in 5.168 seconds (process running for 6.725)
+26-08-11.14:53:04.323 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.14:53:04.323 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.14:53:04.323 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.14:53:04.324 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.14:53:04.324 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.14:53:04.324 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.14:53:04.342 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.14:53:04.680 [pool-2-thread-5 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@517756eb
+26-08-11.14:53:04.682 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.14:53:04.827 [pool-2-thread-3 ] ERROR AgentRepository        - 解析传输配置失败: Unexpected character ('”' (code 8221 / 0x201d)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 12]
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('”' (code 8221 / 0x201d)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 12]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2660)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:741)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2054)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:780)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4917)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3860)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3828)
+	at top.daoha.infrastructure.adapter.repository.AgentRepository.AiClientToolMcpVOByClientIds(AgentRepository.java:209)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at top.daoha.infrastructure.adapter.repository.AgentRepository$$SpringCGLIB$$0.AiClientToolMcpVOByClientIds(<generated>)
+	at top.daoha.domain.agent.service.armory.business.data.impl.AiClientLoadDataStrategy.lambda$2(AiClientLoadDataStrategy.java:42)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run$$$capture(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-08-11.14:53:04.966 [pool-2-thread-3 ] ERROR AgentRepository        - 解析传输配置失败: unclosed.str.lit U
+com.alibaba.fastjson.JSONException: unclosed.str.lit U
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:574)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:488)
+	at top.daoha.infrastructure.adapter.repository.AgentRepository.AiClientToolMcpVOByClientIds(AgentRepository.java:213)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at top.daoha.infrastructure.adapter.repository.AgentRepository$$SpringCGLIB$$0.AiClientToolMcpVOByClientIds(<generated>)
+	at top.daoha.domain.agent.service.armory.business.data.impl.AiClientLoadDataStrategy.lambda$2(AiClientLoadDataStrategy.java:42)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run$$$capture(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.alibaba.fastjson2.JSONException: unclosed.str.lit U
+	at com.alibaba.fastjson2.JSONReader.char1(JSONReader.java:331)
+	at com.alibaba.fastjson2.JSONReaderASCII.readString(JSONReaderASCII.java:1397)
+	at com.alibaba.fastjson2.reader.ORG_1_3_Stdio.readObject(Unknown Source)
+	at com.alibaba.fastjson2.reader.ObjectReaderImplMapTyped.readObject(ObjectReaderImplMapTyped.java:344)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:564)
+	... 19 common frames omitted
+26-08-11.14:53:04.994 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.14:53:04.996 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.14:53:05.007 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.14:53:05.007 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.14:53:05.038 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.14:53:05.090 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.14:56:35.679 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 43736 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.14:56:35.681 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.14:56:38.431 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.14:56:38.436 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.14:56:38.436 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.14:56:39.004 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.14:56:39.979 [main            ] INFO  AgentTest              - Started AgentTest in 4.882 seconds (process running for 6.133)
+26-08-11.14:56:40.782 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.14:56:40.782 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.14:56:40.782 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.14:56:40.782 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.14:56:40.783 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.14:56:40.783 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.14:56:40.801 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.14:56:41.078 [pool-2-thread-4 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@787db234
+26-08-11.14:56:41.080 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.14:56:41.284 [pool-2-thread-3 ] ERROR AgentRepository        - 解析传输配置失败: unclosed.str.lit U
+com.alibaba.fastjson.JSONException: unclosed.str.lit U
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:574)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:488)
+	at top.daoha.infrastructure.adapter.repository.AgentRepository.AiClientToolMcpVOByClientIds(AgentRepository.java:213)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at top.daoha.infrastructure.adapter.repository.AgentRepository$$SpringCGLIB$$0.AiClientToolMcpVOByClientIds(<generated>)
+	at top.daoha.domain.agent.service.armory.business.data.impl.AiClientLoadDataStrategy.lambda$2(AiClientLoadDataStrategy.java:42)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run$$$capture(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.alibaba.fastjson2.JSONException: unclosed.str.lit U
+	at com.alibaba.fastjson2.JSONReader.char1(JSONReader.java:331)
+	at com.alibaba.fastjson2.JSONReaderASCII.readString(JSONReaderASCII.java:1397)
+	at com.alibaba.fastjson2.reader.ORG_1_3_Stdio.readObject(Unknown Source)
+	at com.alibaba.fastjson2.reader.ObjectReaderImplMapTyped.readObject(ObjectReaderImplMapTyped.java:344)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:564)
+	... 19 common frames omitted
+26-08-11.14:56:41.300 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.14:56:41.301 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.14:56:41.307 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.14:56:41.307 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.14:56:41.772 [HttpClient-12-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.14:56:41.828 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.14:56:41.831 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.14:56:42.100 [HttpClient-13-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.14:56:42.138 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.14:56:42.139 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.14:56:42.154 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.14:56:42.169 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.14:59:46.450 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 44016 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.14:59:46.453 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.14:59:48.914 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.14:59:48.919 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.14:59:48.919 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.14:59:49.416 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.14:59:50.231 [main            ] INFO  AgentTest              - Started AgentTest in 4.345 seconds (process running for 5.446)
+26-08-11.14:59:50.971 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.14:59:50.971 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.14:59:50.971 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.14:59:50.971 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.14:59:50.973 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.14:59:50.973 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.14:59:51.000 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.14:59:51.256 [pool-2-thread-4 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@37945664
+26-08-11.14:59:51.258 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.14:59:51.468 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.14:59:51.468 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.14:59:51.475 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.14:59:51.475 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:00:01.552 [ForkJoinPool.commonPool-worker-1] ERROR HttpClientSseClientTransport - SSE connection error
+java.util.concurrent.CompletionException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1152)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:483)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+	... 10 common frames omitted
+26-08-11.15:00:01.555 [ForkJoinPool.commonPool-worker-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:483)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+	... 10 common frames omitted
+26-08-11.15:00:01.570 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:00:01.581 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:04:17.770 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 9288 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:04:17.772 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:04:20.452 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:04:20.457 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:04:20.457 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:04:20.984 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:04:21.861 [main            ] INFO  AgentTest              - Started AgentTest in 4.625 seconds (process running for 6.045)
+26-08-11.15:04:22.610 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:04:22.610 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:04:22.610 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:04:22.610 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:04:22.611 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:04:22.611 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:04:22.629 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:04:22.953 [pool-2-thread-3 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f888d22
+26-08-11.15:04:22.956 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:04:23.213 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:04:23.213 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:04:23.220 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:04:23.220 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:04:33.329 [ForkJoinPool.commonPool-worker-1] ERROR HttpClientSseClientTransport - SSE connection error
+java.util.concurrent.CompletionException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1152)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:483)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+	... 10 common frames omitted
+26-08-11.15:04:33.331 [ForkJoinPool.commonPool-worker-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:483)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+	... 10 common frames omitted
+26-08-11.15:04:33.342 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:04:33.355 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:07:28.601 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 37908 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:07:28.603 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:07:31.155 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:07:31.161 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:07:31.161 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:07:31.668 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:07:32.483 [main            ] INFO  AgentTest              - Started AgentTest in 4.392 seconds (process running for 5.611)
+26-08-11.15:07:33.176 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:07:33.176 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:07:33.176 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:07:33.177 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:07:33.177 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:07:33.177 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:07:33.197 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:07:33.456 [pool-2-thread-5 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@68ddfc55
+26-08-11.15:07:33.458 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:07:33.684 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:07:33.684 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:07:33.691 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:07:33.691 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:07:43.762 [ForkJoinPool.commonPool-worker-1] ERROR HttpClientSseClientTransport - SSE connection error
+java.util.concurrent.CompletionException: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1152)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:483)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+	... 10 common frames omitted
+26-08-11.15:07:43.765 [ForkJoinPool.commonPool-worker-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:580)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:527)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:447)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:483)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:581)
+	... 10 common frames omitted
+26-08-11.15:07:43.786 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:07:43.817 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:11:03.099 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 14572 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:11:03.102 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:11:05.478 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:11:05.510 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:11:05.510 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:11:06.004 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:11:06.753 [main            ] INFO  AgentTest              - Started AgentTest in 4.227 seconds (process running for 5.4)
+26-08-11.15:11:07.414 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:11:07.414 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:11:07.414 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:11:07.415 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:11:07.415 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:11:07.415 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:11:07.433 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:11:07.687 [pool-2-thread-3 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@1096d9cb
+26-08-11.15:11:07.689 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:11:07.898 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:11:07.898 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:11:07.904 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:11:07.904 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:11:08.187 [HttpClient-12-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.15:11:08.224 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.15:11:08.227 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.15:11:08.334 [HttpClient-13-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.15:11:08.358 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.15:11:08.359 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.15:11:08.377 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:11:08.397 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:17:17.579 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 52920 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:17:17.580 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:17:19.817 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:17:19.822 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:17:19.823 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:17:20.319 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:17:20.992 [main            ] INFO  AgentTest              - Started AgentTest in 3.969 seconds (process running for 5.054)
+26-08-11.15:17:21.694 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:17:21.694 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:17:21.695 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:17:21.695 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:17:21.695 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:17:21.696 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:17:21.715 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:17:21.996 [pool-2-thread-5 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@31f44ae4
+26-08-11.15:17:21.998 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:17:22.241 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:17:22.241 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:17:22.247 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:17:22.248 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:17:22.582 [HttpClient-12-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.15:17:22.620 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.15:17:22.622 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.15:17:22.723 [HttpClient-13-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.15:17:22.743 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.15:17:22.743 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.15:17:22.760 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:17:22.773 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:26:56.377 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 53080 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:26:56.379 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:26:58.706 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:26:58.711 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:26:58.711 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:26:59.239 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:26:59.970 [main            ] INFO  AgentTest              - Started AgentTest in 4.221 seconds (process running for 5.367)
+26-08-11.15:27:00.717 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:27:00.717 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:27:00.717 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:27:00.717 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:27:00.718 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:27:00.718 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:27:00.742 [pool-2-thread-1 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:27:01.080 [pool-2-thread-1 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ff04330
+26-08-11.15:27:01.082 [pool-2-thread-1 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:27:01.345 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:27:01.345 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:27:01.352 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:27:01.352 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:27:01.645 [HttpClient-12-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.15:27:01.683 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.15:27:01.687 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.15:27:01.944 [HttpClient-13-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.15:27:01.986 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.15:27:01.987 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.15:27:02.008 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:27:02.021 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:31:03.852 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 52692 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:31:03.853 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:31:06.084 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:31:06.087 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:31:06.087 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:31:06.588 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:31:07.259 [main            ] INFO  AgentTest              - Started AgentTest in 3.983 seconds (process running for 5.175)
+26-08-11.15:31:07.951 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:31:07.951 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:31:07.951 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:31:07.952 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:31:07.952 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:31:07.953 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:31:07.970 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:31:08.227 [pool-2-thread-6 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6517c5cd
+26-08-11.15:31:08.228 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:31:08.459 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:31:08.459 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:31:08.468 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:31:08.468 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:31:08.726 [HttpClient-12-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.15:31:08.763 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.15:31:08.767 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.15:31:08.914 [HttpClient-13-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.15:31:08.935 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.15:31:08.935 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.15:31:08.956 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:31:08.996 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:36:37.655 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 41452 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:36:37.656 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:36:40.358 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:36:40.362 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:36:40.362 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:36:40.861 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:36:41.687 [main            ] INFO  AgentTest              - Started AgentTest in 4.549 seconds (process running for 5.604)
+26-08-11.15:36:42.328 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:36:42.328 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:36:42.328 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:36:42.328 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:36:42.329 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:36:42.329 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:36:42.345 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:36:42.590 [pool-2-thread-6 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bfcee0d
+26-08-11.15:36:42.591 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:36:42.832 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:36:42.832 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:36:42.839 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:36:42.839 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:36:43.110 [HttpClient-12-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.15:36:43.213 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.15:36:43.215 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.15:36:43.345 [HttpClient-13-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.15:36:43.362 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.15:36:43.362 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.15:36:43.380 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:36:43.397 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:48:08.779 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 29180 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:48:08.782 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:48:11.327 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:48:11.332 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:48:11.332 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:48:11.832 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:48:12.755 [main            ] INFO  AgentTest              - Started AgentTest in 4.527 seconds (process running for 5.538)
+26-08-11.15:48:13.564 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:48:13.564 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:48:13.564 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:48:13.564 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:48:13.564 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:48:13.565 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:48:13.586 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:48:13.882 [pool-2-thread-6 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c59282b
+26-08-11.15:48:13.884 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:48:14.116 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:48:14.116 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:48:14.124 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:48:14.124 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:48:14.488 [HttpClient-12-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.15:48:14.529 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.15:48:14.532 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.15:48:14.660 [HttpClient-13-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.15:48:14.694 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.15:48:14.694 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.15:48:14.714 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:48:14.738 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:52:30.136 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 38852 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:52:30.138 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:52:32.959 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:52:32.963 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:52:32.963 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:52:33.482 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:52:34.356 [main            ] INFO  AgentTest              - Started AgentTest in 4.906 seconds (process running for 6.186)
+26-08-11.15:52:35.199 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:52:35.200 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:52:35.200 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:52:35.201 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:52:35.201 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:52:35.201 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:52:35.226 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:52:35.533 [pool-2-thread-5 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@365c75fa
+26-08-11.15:52:35.536 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:52:51.065 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=45s530ms7µs899ns).
+26-08-11.15:53:09.031 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:53:09.031 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:53:09.035 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:53:09.037 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:53:12.329 [HttpClient-12-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.15:53:12.376 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.15:53:12.378 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.15:53:12.553 [HttpClient-13-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.15:53:12.617 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.15:53:12.618 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.15:53:12.635 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:53:12.690 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:54:42.694 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 48448 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:54:42.697 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:54:45.127 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:54:45.133 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:54:45.133 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:54:45.597 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:54:46.335 [main            ] INFO  AgentTest              - Started AgentTest in 4.226 seconds (process running for 5.557)
+26-08-11.15:54:47.214 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:54:47.214 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:54:47.214 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:54:47.215 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:54:47.215 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:54:47.215 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:54:47.239 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:54:47.556 [pool-2-thread-6 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6287bca8
+26-08-11.15:54:47.558 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:55:08.765 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=51s207ms383µs800ns).
+26-08-11.15:55:19.664 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:55:19.664 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:55:19.671 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:55:19.671 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:55:19.927 [HttpClient-12-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.15:55:19.958 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.15:55:19.961 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.15:55:20.103 [HttpClient-13-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.15:55:20.122 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.15:55:20.123 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.15:56:02.460 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=53s695ms331µs400ns).
+26-08-11.15:56:04.720 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 41d9134a-0
+26-08-11.15:56:04.720 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 54fb425e-0
+26-08-11.15:56:35.540 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id fe82bfdc-0
+26-08-11.15:56:35.540 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 955fcdc7-0
+26-08-11.15:56:35.545 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 54fb425e-1
+26-08-11.15:56:35.545 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 41d9134a-1
+26-08-11.15:56:35.546 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 41d9134a-2
+26-08-11.15:56:35.546 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 54fb425e-2
+26-08-11.15:56:35.547 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 41d9134a-3
+26-08-11.15:56:35.547 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 54fb425e-3
+26-08-11.15:56:35.562 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:56:35.577 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.15:57:08.405 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 45888 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.15:57:08.407 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.15:57:10.718 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.15:57:10.723 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.15:57:10.724 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.15:57:11.160 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.15:57:11.876 [main            ] INFO  AgentTest              - Started AgentTest in 3.999 seconds (process running for 4.953)
+26-08-11.15:57:12.495 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.15:57:12.495 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.15:57:12.495 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.15:57:12.495 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.15:57:12.495 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.15:57:12.495 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.15:57:12.514 [pool-2-thread-1 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.15:57:12.752 [pool-2-thread-1 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2180ed75
+26-08-11.15:57:12.754 [pool-2-thread-1 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.15:57:12.972 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:57:12.972 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:57:12.980 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.15:57:12.980 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.15:57:13.331 [HttpClient-12-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.15:57:13.388 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.15:57:13.390 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.15:57:13.572 [HttpClient-13-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.15:57:13.596 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.15:57:13.596 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.15:57:13.635 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, C:\Users\24209\Desktop, C:\Users\24209\Desktop]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, C:\Users\24209\Desktop, C:\Users\24209\Desktop]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+26-08-11.15:57:40.057 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.15:57:40.067 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.16:08:27.091 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 48360 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.16:08:27.093 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.16:08:29.521 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.16:08:29.526 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.16:08:29.526 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.16:08:30.078 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.16:08:30.907 [main            ] INFO  AgentTest              - Started AgentTest in 4.336 seconds (process running for 5.67)
+26-08-11.16:08:31.593 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.16:08:31.593 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.16:08:31.593 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.16:08:31.593 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.16:08:31.594 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.16:08:31.594 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.16:08:31.614 [pool-2-thread-2 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.16:08:31.924 [pool-2-thread-2 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@423f9c7f
+26-08-11.16:08:31.925 [pool-2-thread-2 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.16:08:32.169 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:08:32.170 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:08:32.177 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.16:08:32.178 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:08:32.471 [HttpClient-12-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.16:08:32.499 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.16:08:32.502 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.16:08:32.638 [HttpClient-13-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.16:08:32.700 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.16:08:32.700 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.16:08:32.725 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, D:\node\npx, D:\node\npx.cmd]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, D:\node\npx, D:\node\npx.cmd]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+26-08-11.16:08:41.789 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.16:08:41.800 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.16:10:51.957 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 43520 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.16:10:51.959 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.16:10:54.376 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.16:10:54.381 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.16:10:54.381 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.16:10:54.935 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.16:10:55.723 [main            ] INFO  AgentTest              - Started AgentTest in 4.277 seconds (process running for 5.289)
+26-08-11.16:10:56.428 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.16:10:56.428 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.16:10:56.428 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.16:10:56.429 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.16:10:56.429 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.16:10:56.429 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.16:10:56.447 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.16:10:56.740 [pool-2-thread-6 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@61f166d0
+26-08-11.16:10:56.741 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.16:10:56.991 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:10:56.992 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:10:56.999 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.16:10:57.000 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:10:57.326 [HttpClient-12-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.16:10:57.404 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.16:10:57.410 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.16:10:57.621 [HttpClient-13-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.16:10:57.658 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.16:10:57.659 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.16:11:00.919 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+26-08-11.16:11:00.932 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+26-08-11.16:11:00.932 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=secure-filesystem-server, version=0.2.0], instructions=null]
+26-08-11.16:11:00.933 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5003
+26-08-11.16:11:00.933 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:11:00.935 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'C:\\Users\\24209\\Desktop', 'C:\\Users\\24209\\Desktop' ]
+26-08-11.16:11:01.031 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+26-08-11.16:11:01.032 [main            ] INFO  AgentTest              - 模型构建:OpenAiChatModel [defaultOptions=OpenAiChatOptions: {"streamUsage":false,"model":"gpt-5.4-mini"}]
+26-08-11.16:11:10.668 [main            ] INFO  AgentTest              - 测试结果(call):{"metadata":{"empty":false,"id":"chatcmpl-0501e4be-7fff-4beb-ba7b-6f3d47020e9d","model":"gpt-5.4-mini","rateLimit":{},"usage":{"promptTokens":1437,"completionTokens":415,"totalTokens":1852,"nativeUsage":{"completion_tokens":415,"completion_tokens_details":{"reasoning_tokens":38},"prompt_tokens":1437,"prompt_tokens_details":{"cached_tokens":0},"total_tokens":1852}}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","refusal":"","finishReason":"STOP","index":0,"annotations":[],"id":"chatcmpl-0501e4be-7fff-4beb-ba7b-6f3d47020e9d"},"text":"当前可用的工具主要分两类：**文件/目录操作工具** 和 **发布/通知工具**。\n\n## 一、文件与目录操作\n这些工具用于查看、编辑、创建、移动本地允许目录内的文件：\n\n- **read_text_file**：读取文本文件内容\n- **read_file**：读取文本文件内容（已弃用，建议用 `read_text_file`）\n- **read_media_file**：读取图片/音频等媒体文件\n- **read_multiple_files**：一次读取多个文件\n- **write_file**：新建或覆盖写入文件\n- **edit_file**：按行精确修改文件内容\n- **create_directory**：创建目录\n- **list_directory**：列出目录内容\n- **list_directory_with_sizes**：列出目录内容并显示大小\n- **directory_tree**：递归查看目录树\n- **move_file**：移动或重命名文件/目录\n- **search_files**：按模式搜索文件\n- **get_file_info**：查看文件/目录详细信息\n- **list_allowed_directories**：查看当前允许访问的目录范围\n\n## 二、发布与通知\n这些工具用于内容发布和消息通知：\n\n- **saveArticle**：发布/保存文章到 CSDN\n- **weixinNotice**：发送微信公众号消息通知\n\n## 三、并行调用工具\n- **multi_tool_use.parallel**：可以一次并行执行多个“开发者工具”，提升效率\n\n---\n\n如果你愿意，我还可以继续帮你整理成一份：\n1. **按用途分类的速查表**  \n2. **每个工具的使用示例**  \n3. **适合你当前任务的工具推荐**"{"$ref":"$.metadata.rateLimit.usage.nativeUsage.completion_tokens_details.prompt_tokens_details.result.metadata.contentFilters.output.metadata.annotations"}}},"results":[{"$ref":"$.metadata.rateLimit.usage.nativeUsage.completion_tokens_details.prompt_tokens_details.result"}]}
+26-08-11.16:11:10.682 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.16:11:10.692 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.16:20:38.066 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 45964 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.16:20:38.068 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.16:20:40.384 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.16:20:40.389 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.16:20:40.389 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.16:20:40.907 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.16:20:41.651 [main            ] INFO  AgentTest              - Started AgentTest in 4.114 seconds (process running for 5.134)
+26-08-11.16:20:42.318 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.16:20:42.318 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.16:20:42.318 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.16:20:42.318 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.16:20:42.319 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.16:20:42.319 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.16:20:42.337 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.16:20:42.595 [pool-2-thread-3 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@792be63a
+26-08-11.16:20:42.597 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.16:20:42.833 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:20:42.833 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:20:42.839 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.16:20:42.840 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:20:43.094 [HttpClient-12-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.16:20:43.129 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.16:20:43.131 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.16:20:43.401 [HttpClient-13-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.16:20:43.425 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.16:20:43.425 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.16:20:45.714 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+26-08-11.16:20:45.731 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+26-08-11.16:20:45.732 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=secure-filesystem-server, version=0.2.0], instructions=null]
+26-08-11.16:20:45.732 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5003
+26-08-11.16:20:45.732 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:20:45.735 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'C:\\Users\\24209\\Desktop', 'C:\\Users\\24209\\Desktop' ]
+26-08-11.16:20:45.841 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+26-08-11.16:20:45.842 [main            ] INFO  AgentTest              - 模型构建:OpenAiChatModel [defaultOptions=OpenAiChatOptions: {"streamUsage":false,"model":"gpt-5.4-mini"}]
+26-08-11.16:20:59.944 [main            ] INFO  AgentTest              - 测试结果(call):{"metadata":{"empty":false,"id":"chatcmpl-9888bf47-0b3e-46b4-b97a-bd4599c97055","model":"gpt-5.4-mini","rateLimit":{},"usage":{"promptTokens":2972,"completionTokens":661,"totalTokens":3633}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","finishReason":"STOP","refusal":"","index":0,"annotations":[],"id":"chatcmpl-9888bf47-0b3e-46b4-b97a-bd4599c97055"},"text":"我这边**无法直接访问**你指定的路径 `/Users/fuzhengwei/Desktop`，当前可写目录只有：\n\n- `C:\\Users\\24209\\Desktop`\n\n另外，我也**不能自动读取你电脑的真实配置**，所以不能凭空帮你生成“当前电脑配置”的准确介绍。\n\n如果你愿意，我可以马上帮你做下面两种之一：\n\n1. **在可访问的桌面目录** `C:\\Users\\24209\\Desktop` 下创建 `txt.md`\n2. 先给你生成一个**电脑配置介绍模板**，你把实际参数填进去\n\n如果你想，我现在就可以直接帮你创建一个 `txt.md`，内容写成 Markdown 格式的配置介绍模板。"{"$ref":"$.metadata.rateLimit.usage.result.metadata.contentFilters.output.metadata.annotations"}}},"results":[{"$ref":"$.metadata.rateLimit.usage.result"}]}
+26-08-11.16:20:59.958 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.16:20:59.968 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.16:21:58.004 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 23144 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.16:21:58.006 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.16:22:00.329 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.16:22:00.333 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.16:22:00.333 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.16:22:00.840 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.16:22:01.614 [main            ] INFO  AgentTest              - Started AgentTest in 4.12 seconds (process running for 5.072)
+26-08-11.16:22:02.307 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.16:22:02.307 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.16:22:02.307 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.16:22:02.308 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.16:22:02.308 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.16:22:02.309 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.16:22:02.325 [pool-2-thread-1 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.16:22:02.586 [pool-2-thread-1 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@12970d16
+26-08-11.16:22:02.587 [pool-2-thread-1 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.16:22:02.806 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:22:02.807 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:22:02.813 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.16:22:02.814 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:22:03.093 [HttpClient-12-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.16:22:03.129 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.16:22:03.132 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.16:22:03.280 [HttpClient-13-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.16:22:03.310 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.16:22:03.310 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.16:22:05.177 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+26-08-11.16:22:05.189 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+26-08-11.16:22:05.189 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=secure-filesystem-server, version=0.2.0], instructions=null]
+26-08-11.16:22:05.189 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5003
+26-08-11.16:22:05.190 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:22:05.192 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'C:\\Users\\24209\\Desktop', 'C:\\Users\\24209\\Desktop' ]
+26-08-11.16:22:05.329 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+26-08-11.16:22:05.329 [main            ] INFO  AgentTest              - 模型构建:OpenAiChatModel [defaultOptions=OpenAiChatOptions: {"streamUsage":false,"model":"gpt-5.4-mini"}]
+26-08-11.16:22:10.192 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id a62fd3e3-0
+26-08-11.16:22:10.402 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 30cfd1ff-0
+26-08-11.16:22:10.402 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 799474c5-0
+26-08-11.16:22:10.403 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 274e6c37-0
+26-08-11.16:22:10.403 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id a62fd3e3-1
+26-08-11.16:22:10.403 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 30cfd1ff-1
+26-08-11.16:22:10.500 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id a62fd3e3-2
+26-08-11.16:22:10.500 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 30cfd1ff-2
+26-08-11.16:22:10.612 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id a62fd3e3-3
+26-08-11.16:22:10.644 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 30cfd1ff-3
+26-08-11.16:22:29.559 [main            ] INFO  AgentTest              - 测试结果(call):{"metadata":{"empty":false,"id":"chatcmpl-c49eb7d9-c467-46be-8259-2f44caa35033","model":"gpt-5.4-mini","rateLimit":{},"usage":{"promptTokens":5103,"completionTokens":1318,"totalTokens":6421}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","refusal":"","finishReason":"STOP","annotations":[],"index":0,"id":"chatcmpl-c49eb7d9-c467-46be-8259-2f44caa35033"},"text":"我已经帮你在 `C:\\Users\\24209\\Desktop\\txt.md` 创建好了文件，并写入了“当前电脑配置介绍”的内容模板。\n\n不过要说明一下：我这边**不能直接读取你电脑的真实硬件配置**，所以文件里目前是一个可直接补充的介绍版本。如果你愿意，我也可以继续帮你做下面两种之一：\n\n1. **你把配置发我**，我帮你改成一份正式的电脑配置介绍文案；\n2. **我按你电脑的真实信息结构**帮你整理成更像“设备说明书”的格式。\n\n如果你想，我下一步可以直接帮你写成：\n- **简洁版**\n- **详细版**\n- **适合发朋友圈/发文档的正式版**"{"$ref":"$.metadata.rateLimit.usage.result.metadata.contentFilters.output.metadata.annotations"}}},"results":[{"$ref":"$.metadata.rateLimit.usage.result"}]}
+26-08-11.16:22:29.575 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.16:22:29.583 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.16:23:41.786 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 45888 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.16:23:41.788 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.16:23:44.140 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.16:23:44.146 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.16:23:44.146 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.16:23:44.627 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.16:23:45.273 [main            ] INFO  AgentTest              - Started AgentTest in 4.001 seconds (process running for 5.011)
+26-08-11.16:23:45.931 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.16:23:45.930 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.16:23:45.932 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.16:23:45.932 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.16:23:45.932 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.16:23:45.933 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.16:23:45.950 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.16:23:46.182 [pool-2-thread-3 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a007d35
+26-08-11.16:23:46.184 [pool-2-thread-3 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.16:23:46.386 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:23:46.386 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:23:46.392 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.16:23:46.392 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:23:46.626 [HttpClient-12-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.16:23:46.695 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.16:23:46.697 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.16:23:46.865 [HttpClient-13-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.16:23:46.889 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.16:23:46.890 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.16:23:48.863 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+26-08-11.16:23:48.876 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+26-08-11.16:23:48.876 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=secure-filesystem-server, version=0.2.0], instructions=null]
+26-08-11.16:23:48.877 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5003
+26-08-11.16:23:48.877 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:23:48.879 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'C:\\Users\\24209\\Desktop', 'C:\\Users\\24209\\Desktop' ]
+26-08-11.16:23:48.981 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+26-08-11.16:23:48.982 [main            ] INFO  AgentTest              - 模型构建:OpenAiChatModel [defaultOptions=OpenAiChatOptions: {"streamUsage":false,"model":"gpt-5.4-mini"}]
+26-08-11.16:24:10.874 [main            ] INFO  AgentTest              - 测试结果(call):{"metadata":{"empty":false,"id":"chatcmpl-8b7c7dc4-b1ce-45f5-ae79-8bf2b30f2fb8","model":"gpt-5.4-mini","rateLimit":{},"usage":{"promptTokens":4764,"completionTokens":979,"totalTokens":5743}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","finishReason":"STOP","refusal":"","index":0,"annotations":[],"id":"chatcmpl-8b7c7dc4-b1ce-45f5-ae79-8bf2b30f2fb8"},"text":"已帮你在桌面创建了 `txt.md`。\n\n不过需要说明一下：我当前**无法直接读取本机电脑的真实硬件配置**，所以文件里先写的是一段说明文字，不是实际配置内容。\n\n如果你愿意，我可以继续帮你做两种事之一：\n\n1. **你把电脑配置发给我**，我帮你立刻整理成正式介绍文案；\n2. **我教你一键查看配置**，你把结果贴给我，我再帮你生成完整 `txt.md` 内容。\n\n如果你想，我也可以直接给你一份适合 Windows/macOS 的“查看配置命令清单”。"{"$ref":"$.metadata.rateLimit.usage.result.metadata.contentFilters.output.metadata.annotations"}}},"results":[{"$ref":"$.metadata.rateLimit.usage.result"}]}
+26-08-11.16:24:10.891 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.16:24:10.902 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.16:24:52.407 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 48460 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.16:24:52.408 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.16:24:54.612 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.16:24:54.617 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.16:24:54.617 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.16:24:55.037 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.16:24:55.697 [main            ] INFO  AgentTest              - Started AgentTest in 3.802 seconds (process running for 4.743)
+26-08-11.16:24:56.348 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.16:24:56.348 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.16:24:56.348 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.16:24:56.348 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.16:24:56.349 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.16:24:56.349 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.16:24:56.369 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.16:24:56.631 [pool-2-thread-4 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dc384a0
+26-08-11.16:24:56.632 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.16:24:56.840 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:24:56.841 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:24:56.848 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.16:24:56.848 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:24:57.100 [HttpClient-12-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.16:24:57.151 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.16:24:57.154 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.16:24:57.274 [HttpClient-13-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.16:24:57.314 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.16:24:57.314 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.16:24:59.270 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+26-08-11.16:24:59.283 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+26-08-11.16:24:59.283 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=secure-filesystem-server, version=0.2.0], instructions=null]
+26-08-11.16:24:59.283 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5003
+26-08-11.16:24:59.283 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3001"],"commandType":"client"}
+26-08-11.16:24:59.286 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'C:\\Users\\24209\\Desktop', 'C:\\Users\\24209\\Desktop' ]
+26-08-11.16:24:59.383 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+26-08-11.16:24:59.383 [main            ] INFO  AgentTest              - 模型构建:OpenAiChatModel [defaultOptions=OpenAiChatOptions: {"streamUsage":false,"model":"gpt-5.4-mini"}]
+26-08-11.16:25:06.302 [main            ] INFO  AgentTest              - 测试结果(call):{"metadata":{"empty":false,"id":"chatcmpl-8c803b50-8be3-4eb9-9ef7-233464fde76d","model":"gpt-5.4-mini","rateLimit":{},"usage":{"promptTokens":1437,"completionTokens":353,"totalTokens":1790,"nativeUsage":{"completion_tokens":353,"completion_tokens_details":{"reasoning_tokens":60},"prompt_tokens":1437,"prompt_tokens_details":{"cached_tokens":0},"total_tokens":1790}}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","refusal":"","finishReason":"STOP","annotations":[],"index":0,"id":"chatcmpl-8c803b50-8be3-4eb9-9ef7-233464fde76d"},"text":"当前可用的工具主要分几类：\n\n### 1) 文件与目录操作\n- **读取文件**\n  - `read_text_file`\n  - `read_file`（已弃用）\n  - `read_media_file`\n  - `read_multiple_files`\n- **写入/编辑文件**\n  - `write_file`\n  - `edit_file`\n- **目录管理**\n  - `create_directory`\n  - `list_directory`\n  - `list_directory_with_sizes`\n  - `directory_tree`\n- **文件移动/重命名**\n  - `move_file`\n- **搜索与信息查询**\n  - `search_files`\n  - `get_file_info`\n  - `list_allowed_directories`\n\n### 2) 内容发布与通知\n- **发布到 CSDN**\n  - `saveArticle`\n- **微信公众号通知**\n  - `weixinNotice`\n\n### 3) 批量并行执行\n- **并行调用多个工具**\n  - `multi_tool_use.parallel`\n\n如果你愿意，我也可以按你的需求直接告诉你：\n- **适合看代码的工具**\n- **适合改文件的工具**\n- **适合发文章的工具**\n- **适合查目录结构的工具**\n\n你也可以直接说“帮我列出当前可访问目录”或“帮我看某个文件”。"{"$ref":"$.metadata.rateLimit.usage.nativeUsage.completion_tokens_details.prompt_tokens_details.result.metadata.contentFilters.output.metadata.annotations"}}},"results":[{"$ref":"$.metadata.rateLimit.usage.nativeUsage.completion_tokens_details.prompt_tokens_details.result"}]}
+26-08-11.16:25:06.324 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.16:25:06.341 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-11.17:57:56.402 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 51004 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-11.17:57:56.404 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-11.17:57:59.135 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-11.17:57:59.142 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-11.17:57:59.142 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-11.17:57:59.696 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-11.17:58:00.584 [main            ] INFO  AgentTest              - Started AgentTest in 4.886 seconds (process running for 6.509)
+26-08-11.17:58:01.296 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-11.17:58:01.295 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-11.17:58:01.296 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-11.17:58:01.296 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-11.17:58:01.296 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-11.17:58:01.296 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-11.17:58:01.314 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-11.17:58:01.611 [pool-2-thread-4 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e79dd21
+26-08-11.17:58:01.612 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-11.17:58:01.886 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-08-11.17:58:01.886 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-08-11.17:58:01.893 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-11.17:58:01.895 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3001"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-08-11.17:58:02.197 [HttpClient-12-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-08-11.17:58:02.232 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-08-11.17:58:02.235 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-08-11.17:58:02.339 [HttpClient-13-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-08-11.17:58:02.406 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-08-11.17:58:02.407 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-08-11.17:58:05.117 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+26-08-11.17:58:05.133 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+26-08-11.17:58:05.133 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=secure-filesystem-server, version=0.2.0], instructions=null]
+26-08-11.17:58:05.134 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5003
+26-08-11.17:58:05.134 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3001"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-08-11.17:58:05.136 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'C:\\Users\\24209\\Desktop', 'C:\\Users\\24209\\Desktop' ]
+26-08-11.17:58:05.255 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+26-08-11.17:58:05.255 [main            ] INFO  AgentTest              - 模型构建:OpenAiChatModel [defaultOptions=OpenAiChatOptions: {"streamUsage":false,"model":"gpt-5.4-mini"}]
+26-08-11.17:58:57.468 [HttpClient-12-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 68755377-0
+26-08-11.17:58:57.568 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 1c2c4546-0
+26-08-11.17:59:12.761 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id beeb1e8c-0
+26-08-11.17:59:12.761 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 316b56f7-0
+26-08-11.17:59:12.841 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 68755377-1
+26-08-11.17:59:12.843 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 1c2c4546-1
+26-08-11.17:59:12.845 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 68755377-2
+26-08-11.17:59:12.845 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 1c2c4546-2
+26-08-11.17:59:12.846 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 68755377-3
+26-08-11.17:59:12.846 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 1c2c4546-3
+26-08-11.17:59:20.813 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 480c02ea-0
+26-08-11.17:59:20.856 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 54f65633-0
+26-08-11.17:59:20.894 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b58d9247-0
+26-08-11.17:59:20.912 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id c5ba94be-0
+26-08-11.17:59:20.951 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 480c02ea-1
+26-08-11.17:59:21.088 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 54f65633-1
+26-08-11.17:59:21.089 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 480c02ea-2
+26-08-11.17:59:21.106 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 54f65633-2
+26-08-11.17:59:21.261 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 480c02ea-3
+26-08-11.17:59:21.300 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 54f65633-3
+26-08-11.17:59:30.246 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 980ccd1b-0
+26-08-11.17:59:30.331 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id b0704b0e-0
+26-08-11.17:59:30.376 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id f19c10bf-0
+26-08-11.17:59:30.378 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 211e48bf-0
+26-08-11.17:59:30.423 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 980ccd1b-1
+26-08-11.17:59:30.471 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id b0704b0e-1
+26-08-11.17:59:30.543 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 980ccd1b-2
+26-08-11.17:59:30.664 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id b0704b0e-2
+26-08-11.17:59:30.668 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id b0704b0e-3
+26-08-11.17:59:30.668 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 980ccd1b-3
+26-08-11.17:59:39.109 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 3b311427-0
+26-08-11.17:59:39.341 [HttpClient-13-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 68cee8ff-0
+26-08-11.17:59:39.365 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id f6196bbc-0
+26-08-11.17:59:50.477 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id e825560c-0
+26-08-11.17:59:50.496 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 3b311427-1
+26-08-11.17:59:50.519 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 68cee8ff-1
+26-08-11.17:59:50.546 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 68cee8ff-2
+26-08-11.17:59:50.546 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 3b311427-2
+26-08-11.17:59:50.702 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 3b311427-3
+26-08-11.17:59:50.703 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 68cee8ff-3
+26-08-11.17:59:58.818 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b151b9ae-0
+26-08-11.17:59:59.025 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 377720c4-0
+26-08-11.17:59:59.038 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id c16f5d22-0
+26-08-11.17:59:59.073 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id f2bcbd0c-0
+26-08-11.17:59:59.073 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b151b9ae-1
+26-08-11.17:59:59.086 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 377720c4-1
+26-08-11.17:59:59.116 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b151b9ae-2
+26-08-11.17:59:59.124 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 377720c4-2
+26-08-11.17:59:59.282 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b151b9ae-3
+26-08-11.17:59:59.299 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 377720c4-3
+26-08-11.18:00:07.436 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 2fe9006b-0
+26-08-11.18:00:07.553 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 80046498-0
+26-08-11.18:00:07.663 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 5c4d98e8-0
+26-08-11.18:00:07.663 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id e210dc81-0
+26-08-11.18:00:07.664 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 80046498-1
+26-08-11.18:00:07.664 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 2fe9006b-1
+26-08-11.18:00:07.664 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 2fe9006b-2
+26-08-11.18:00:07.664 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 80046498-2
+26-08-11.18:00:07.819 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 2fe9006b-3
+26-08-11.18:00:07.828 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 80046498-3
+26-08-11.18:00:09.877 [main            ] INFO  AgentTest              - 测试结果(call):{"metadata":{"empty":false,"id":"chatcmpl-04688e57-3d14-4daa-a123-3abb20b0ccc4","model":"gpt-5.4-mini","rateLimit":{},"usage":{"promptTokens":10871,"completionTokens":3394,"totalTokens":14265}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","finishReason":"STOP","refusal":"","index":0,"annotations":[],"id":"chatcmpl-04688e57-3d14-4daa-a123-3abb20b0ccc4"},"text":"已帮你在 CSDN 发布完成，并已发送公众号通知。\n\n文章链接：  \nhttps://blog.csdn.net/m0_73837404/article/details/163673248\n\n如果你愿意，我还可以继续帮你：\n- 优化这篇文章的标题和摘要，提升 CSDN 搜索曝光\n- 再补一张更直观的关系图\n- 继续写一篇“Agent + MCP 的落地架构实践”"{"$ref":"$.metadata.rateLimit.usage.result.metadata.contentFilters.output.metadata.annotations"}}},"results":[{"$ref":"$.metadata.rateLimit.usage.result"}]}
+26-08-11.18:00:09.904 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-11.18:00:09.915 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.

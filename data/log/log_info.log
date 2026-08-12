@@ -1,0 +1,17 @@
+26-06-01.10:31:48.875 [main            ] INFO  Application            - Starting Application using Java 17 with PID 24396 (D:\自学\java学习\agent学习\agent-learn\agent-learn-app\target\classes started by 24209 in D:\自学\java学习\agent学习\agent-learn)
+26-06-01.10:31:48.876 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-06-01.10:31:50.006 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+26-06-01.10:31:50.020 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-06-01.10:31:50.021 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-06-01.10:31:50.021 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+26-06-01.10:31:50.095 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-06-01.10:31:50.095 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1182 ms
+26-06-01.10:31:50.462 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-06-01.10:31:50.467 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-06-01.10:31:50.467 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-06-01.10:31:50.877 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-06-01.10:31:51.310 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-06-01.10:31:51.318 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+26-06-01.10:31:51.327 [main            ] INFO  Application            - Started Application in 2.937 seconds (process running for 3.516)
+26-06-01.10:32:04.816 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-06-01.10:32:04.939 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete

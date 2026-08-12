@@ -1,0 +1,53 @@
+26-08-07.17:09:15.573 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 46168 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-07.17:09:15.575 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-07.17:09:18.162 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-07.17:09:18.167 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-07.17:09:18.167 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-07.17:09:18.649 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-07.17:09:19.368 [main            ] INFO  AgentTest              - Started AgentTest in 4.347 seconds (process running for 5.565)
+26-08-07.17:09:20.017 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-07.17:09:20.017 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-07.17:09:20.017 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-07.17:09:20.018 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-07.17:09:20.018 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-07.17:09:20.018 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-07.17:09:20.037 [pool-2-thread-2 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-07.17:09:20.338 [pool-2-thread-2 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b83f6ba
+26-08-07.17:09:20.340 [pool-2-thread-2 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-07.17:09:20.595 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-07.17:09:20.596 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-07.17:09:20.603 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-07.17:09:20.605 [main            ] INFO  AgentTest              - 测试结果：org.springframework.ai.openai.api.OpenAiApi@7c20b78b
+26-08-07.17:09:20.617 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-07.17:09:20.678 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-07.17:11:04.854 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 41640 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-07.17:11:04.857 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-07.17:11:07.670 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-07.17:11:07.674 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-07.17:11:07.675 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-07.17:11:08.175 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-07.17:11:09.059 [main            ] INFO  AgentTest              - Started AgentTest in 4.788 seconds (process running for 6.521)
+26-08-07.17:11:10.112 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3001]
+26-08-07.17:11:10.112 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3001]
+26-08-07.17:11:10.113 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3001]
+26-08-07.17:11:10.114 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3001]
+26-08-07.17:11:10.115 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3001]
+26-08-07.17:11:10.116 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3001]
+26-08-07.17:11:10.148 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-08-07.17:11:10.533 [pool-2-thread-5 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f2a4107
+26-08-07.17:11:10.536 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-08-07.17:11:10.876 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-07.17:11:10.876 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3001"],"commandType":"client"}
+26-08-07.17:11:10.885 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-08-07.17:15:14.270 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=4m3s622ms256µs100ns).
+26-08-07.17:29:31.297 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=14m17s27ms627µs600ns).
+26-08-07.17:29:31.299 [main            ] INFO  AgentTest              - 测试结果：org.springframework.ai.openai.api.OpenAiApi@11213a33
+26-08-07.17:29:31.382 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-08-07.17:29:33.378 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-08-07.17:29:52.645 [main            ] INFO  AgentTest              - Starting AgentTest using Java 17 with PID 49340 (started by 24209 in D:\self_study\java学习\agent学习\agent-learn\agent-learn-app)
+26-08-07.17:29:52.645 [main            ] INFO  AgentTest              - The following 1 profile is active: "dev"
+26-08-07.17:29:55.414 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-08-07.17:29:55.418 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-08-07.17:29:55.418 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-08-07.17:29:55.947 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-08-07.17:29:56.831 [main            ] INFO  AgentTest              - Started AgentTest in 4.749 seconds (process running for 5.969)

@@ -1,0 +1,168 @@
+26-05-31.09:07:58.107 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.09:16:33.172 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.09:17:52.752 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.09:20:06.207 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.09:22:48.258 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.09:27:11.890 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.09:55:12.306 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.09:55:48.522 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.10:26:37.516 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.10:26:55.533 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.10:29:15.778 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.10:39:13.526 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.10:39:16.886 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, C:\Users\24209\Desktop, C:\Users\24209\Desktop]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, C:\Users\24209\Desktop, C:\Users\24209\Desktop]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+26-05-31.10:41:53.312 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.10:42:04.060 [main            ] WARN  RetryUtils             - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 401 - {"error":{"message":"该令牌已过期 (request id: 2026053110420478258239144830275)","type":"one_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at top.daoha.test.ai.AiAgentTest.test_chat_model_call(AiAgentTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-05-31.10:45:05.866 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.10:45:11.296 [main            ] WARN  RetryUtils             - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 403 - {"error":{"code":"","message":"This token has no access to model gpt-4.1-mini (request id: 202605310245119314042028268d9d6FX5fI3Xl)","type":"new_api_error"}}
+	at org.springframework.ai.retry.RetryUtils$1.handleError(RetryUtils.java:63)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:815)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:814)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:770)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:574)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:535)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:809)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:769)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:758)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:187)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:199)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:199)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:196)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at top.daoha.test.ai.AiAgentTest.test_chat_model_call(AiAgentTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-05-31.10:52:40.862 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.10:53:32.594 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.10:57:29.575 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.11:29:24.671 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.11:33:20.783 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.11:36:05.401 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.11:36:51.207 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
+26-05-31.11:46:20.333 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[top.daoha]' package. Please check your configuration.
