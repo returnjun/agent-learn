@@ -13,6 +13,7 @@ import top.daoha.infrastructure.dao.*;
 import top.daoha.infrastructure.dao.po.*;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static top.daoha.domain.agent.model.valobj.AiAgentEnumVO.*;
 
@@ -274,6 +275,25 @@ public class AgentRepository implements IAgentRepository {
         }
 
         return result;
+    }
+
+    @Override
+    public Map<String, AiClientSystemPromptVO> AiClientSystemPromptMapByClientIds(List<String> clientIdList) {
+
+        List<AiClientSystemPromptVO> aiClientSystemPromptVOS = AiClientSystemPromptVOByClientIds(clientIdList);
+        if (aiClientSystemPromptVOS == null || aiClientSystemPromptVOS.isEmpty()) {
+            return Map.of();
+        }
+        return aiClientSystemPromptVOS.stream()
+                .map(prompt->AiClientSystemPromptVO.builder()
+                        .promptId(prompt.getPromptId())
+                        .promptContent(prompt.getPromptContent())
+                        .build())
+                .collect(Collectors.toMap(
+                        AiClientSystemPromptVO::getPromptId,
+                        prompt->prompt,
+                        (existing,replacement)->existing
+                ));
     }
 
     @Override

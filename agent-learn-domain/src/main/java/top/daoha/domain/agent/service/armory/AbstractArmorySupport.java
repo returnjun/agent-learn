@@ -33,6 +33,7 @@ public abstract class AbstractArmorySupport extends AbstractMultiThreadStrategyR
     protected void multiThread(ArmoryCommandEntity requestParameter, DefaultArmoryStrategyFactory.DynamicContext dynamicContext) throws ExecutionException, InterruptedException, TimeoutException {
         // 缺省的
     }
+
     /**
      * 通用的Bean注册方法
      *

@@ -64,6 +64,14 @@
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-mcp</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-vector-store</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-client-chat</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

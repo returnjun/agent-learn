@@ -3,6 +3,7 @@ package top.daoha.domain.agent.adapter.repository;
 import top.daoha.domain.agent.model.valobj.*;
 
 import java.util.List;
+import java.util.Map;
 
 public interface IAgentRepository {
     //查出client所需要的所有api
@@ -13,6 +14,8 @@ public interface IAgentRepository {
     List<AiClientToolMcpVO> AiClientToolMcpVOByClientIds(List<String> clientIdList);
 
     List<AiClientSystemPromptVO> AiClientSystemPromptVOByClientIds(List<String> clientIdList);
+
+    Map<String,AiClientSystemPromptVO> AiClientSystemPromptMapByClientIds(List<String> clientIdList);
 
     List<AiClientAdvisorVO> AiClientAdvisorVOByClientIds(List<String> clientIdList);
 

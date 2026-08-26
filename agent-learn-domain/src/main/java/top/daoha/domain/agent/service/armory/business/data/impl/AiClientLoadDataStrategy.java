@@ -10,6 +10,7 @@ import top.daoha.domain.agent.service.armory.business.data.ILoadDataStrategy;
 import top.daoha.domain.agent.service.armory.factory.DefaultArmoryStrategyFactory;
 
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ThreadPoolExecutor;
 
@@ -42,9 +43,9 @@ public class AiClientLoadDataStrategy implements ILoadDataStrategy {
             return repository.AiClientToolMcpVOByClientIds(clientIdList);
         }, threadPoolExecutor);
 
-        CompletableFuture<List<AiClientSystemPromptVO>> aiClientSystemPromptListFuture = CompletableFuture.supplyAsync(() -> {
+        CompletableFuture<Map<String,AiClientSystemPromptVO>> aiClientSystemPromptListFuture = CompletableFuture.supplyAsync(() -> {
             log.info("查询配置数据(ai_client_system_prompt) {}", clientIdList);
-            return repository.AiClientSystemPromptVOByClientIds(clientIdList);
+            return repository.AiClientSystemPromptMapByClientIds(clientIdList);
         }, threadPoolExecutor);
 
         CompletableFuture<List<AiClientAdvisorVO>> aiClientAdvisorListFuture = CompletableFuture.supplyAsync(() -> {

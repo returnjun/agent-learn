@@ -14,6 +14,7 @@ import top.daoha.domain.agent.model.valobj.AiAgentEnumVO;
 import top.daoha.domain.agent.model.valobj.AiClientModelVO;
 import top.daoha.domain.agent.service.armory.factory.DefaultArmoryStrategyFactory;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +27,9 @@ import java.util.List;
 @Slf4j
 @Service
 public class AiClientModelNode extends AbstractArmorySupport {
+
+    @Resource
+    AiClientAdvisorNode aiClientAdvisorNode;
 
     @Override
     protected String doApply(ArmoryCommandEntity requestParameter, DefaultArmoryStrategyFactory.DynamicContext dynamicContext) throws Exception {
@@ -41,7 +45,7 @@ public class AiClientModelNode extends AbstractArmorySupport {
         for (AiClientModelVO modelVO : aiClientModelList) {
 
             // 获取当前模型关联的 API Bean 对象
-            OpenAiApi openAiApi = getBean(beanName(modelVO.getApiId()));
+            OpenAiApi openAiApi = getBean(AiAgentEnumVO.AI_CLIENT_API.getBeanName(modelVO.getApiId()));
             if (null == openAiApi) {
                 throw new RuntimeException("mode 2 api is null");
             }
@@ -49,7 +53,7 @@ public class AiClientModelNode extends AbstractArmorySupport {
             // 获取当前模型关联的 Tool MCP Bean 对象
             List<McpSyncClient> mcpSyncClients = new ArrayList<>();
             for (String toolMcpId : modelVO.getToolMcpIds()) {
-                McpSyncClient mcpSyncClient = getBean(beanName(toolMcpId));
+                McpSyncClient mcpSyncClient = getBean(AiAgentEnumVO.AI_CLIENT_TOOL_MCP.getBeanName(toolMcpId));
                 mcpSyncClients.add(mcpSyncClient);
             }
 
@@ -72,7 +76,7 @@ public class AiClientModelNode extends AbstractArmorySupport {
 
     @Override
     public StrategyHandler<ArmoryCommandEntity, DefaultArmoryStrategyFactory.DynamicContext, String> get(ArmoryCommandEntity requestParameter, DefaultArmoryStrategyFactory.DynamicContext dynamicContext) throws Exception {
-        return defaultStrategyHandler;
+        return aiClientAdvisorNode;
     }
 
     @Override
