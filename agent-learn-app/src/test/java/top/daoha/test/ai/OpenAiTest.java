@@ -2,6 +2,9 @@ package top.daoha.test.ai;
 
 import com.alibaba.fastjson.JSON;
 import com.zaxxer.hikari.HikariDataSource;
+import io.modelcontextprotocol.client.McpClient;
+import io.modelcontextprotocol.client.McpSyncClient;
+import io.modelcontextprotocol.client.transport.HttpClientSseClientTransport;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,8 +15,10 @@ import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.SystemPromptTemplate;
 import org.springframework.ai.document.Document;
+import org.springframework.ai.mcp.SyncMcpToolCallbackProvider;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.openai.OpenAiChatOptions;
+import org.springframework.ai.openai.api.OpenAiApi;
 import org.springframework.ai.reader.tika.TikaDocumentReader;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
 import org.springframework.ai.vectorstore.SearchRequest;
@@ -28,6 +33,7 @@ import org.springframework.util.MimeType;
 import org.springframework.util.MimeTypeUtils;
 import reactor.core.publisher.Flux;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -185,4 +191,67 @@ public class OpenAiTest {
         System.out.println("====== 测谎结束 ======");
     }
 
+    /**
+     * @ClassName : AiSearchMCPTest
+     * @Description :
+     * @github:
+     * @Author : 24209
+     * @Date: 2026/8/27  20:58
+     */
+
+    @Slf4j
+    @RunWith(SpringRunner.class)
+    @SpringBootTest
+    public static class AiSearchMCPTest {
+
+        @Test
+        public void test() {
+            OpenAiChatModel chatModel = OpenAiChatModel.builder()
+                    .openAiApi(OpenAiApi.builder()
+                            .baseUrl("https://api2.aigcbest.top")
+                            .apiKey("sk-qN3s0oXo3UkMbQpfdB6GbxpaPXSRtcVR0ib3ic7X2jIIupMq")
+                            .completionsPath("v1/chat/completions")
+                            .embeddingsPath("v1/embeddings")
+                            .build())
+                    .defaultOptions(OpenAiChatOptions.builder()
+                            .model("gpt-5.4-mini")
+                            .toolCallbacks(new SyncMcpToolCallbackProvider(sseMcpClient1()).getToolCallbacks())
+                            .build())
+                    .build();
+
+            ChatResponse call = chatModel.call(Prompt.builder()
+                                .messages(new UserMessage("请你告诉我怎么从信工所到天安门走公关交通"))
+                            .build());
+            log.info("测试结果:{}", JSON.toJSONString(call));
+        }
+
+        public McpSyncClient sseMcoClient(){
+            HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("http://appbuilder.baidu.com/v2/ai_search/mcp/")
+                    .sseEndpoint("sse?api_key=bce-v3/ALTAK-JyRDSbohzwZh96BEArsls/6072237399822c7a9b16bc53fa52506d2205a056")
+                    .build();
+
+            McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport)
+                    .requestTimeout(Duration.ofMinutes(360))
+                    .build();
+
+            var initialize = mcpSyncClient.initialize();
+            log.info("Tool SSE MCP Initialized {}", initialize);
+
+            return  mcpSyncClient;
+        }
+        public McpSyncClient sseMcpClient1(){
+            HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("https://mcp.amap.com")
+                    .sseEndpoint("/sse?key=fe472f8e8467d5c0d4284a2c6a6222da")
+                    .build();
+
+            McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport)
+                    .requestTimeout(Duration.ofMinutes(360))
+                    .build();
+
+            var initialize = mcpSyncClient.initialize();
+            log.info("Tool SSE MCP Initialized {}", initialize);
+
+            return  mcpSyncClient;
+        }
+    }
 }

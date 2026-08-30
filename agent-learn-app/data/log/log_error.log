@@ -1,22 +1,63 @@
-26-08-26.23:04:21.959 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=1m34s839ms749µs).
-26-08-26.23:04:24.166 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id f8717a50-0
-26-08-26.23:04:24.166 [HttpClient-12-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 7cf81db0-0
-26-08-26.23:04:26.313 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id d9a3ce0a-0
-26-08-26.23:04:26.313 [HttpClient-12-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 9cfb81ef-0
-26-08-26.23:04:27.045 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id f8717a50-1
-26-08-26.23:04:27.045 [HttpClient-12-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 7cf81db0-1
-26-08-26.23:04:33.082 [HttpClient-12-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 7cf81db0-2
-26-08-26.23:04:33.082 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id f8717a50-2
-26-08-26.23:04:34.604 [HttpClient-12-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 7cf81db0-3
-26-08-26.23:04:34.604 [HttpClient-13-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id f8717a50-3
-26-08-26.23:05:57.241 [MainHikariPool housekeeper] WARN  HikariPool             - MainHikariPool - Thread starvation or clock leap detected (housekeeper delta=45s112ms654µs100ns).
-26-08-26.23:07:22.209 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id c628c5e4-0
-26-08-26.23:07:22.368 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id c31e334c-0
-26-08-26.23:07:22.509 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id e975a32f-0
-26-08-26.23:07:22.595 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id c628c5e4-1
-26-08-26.23:07:22.595 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 6af7a536-0
-26-08-26.23:07:22.596 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id c31e334c-1
-26-08-26.23:07:22.597 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id c628c5e4-2
-26-08-26.23:07:22.597 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id c31e334c-2
-26-08-26.23:07:22.670 [HttpClient-12-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id c628c5e4-3
-26-08-26.23:07:22.753 [HttpClient-13-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id c31e334c-3
+26-08-29.17:16:28.631 [ForkJoinPool.commonPool-worker-1] ERROR HttpClientSseClientTransport - Error sending message: 500
+26-08-29.22:02:31.910 [main            ] ERROR AutoAgentTest          - ❌ 第 3 步执行出现异常: Error calling tool: [TextContent[audience=null, priority=null, text=Access denied - path outside allowed directories: D:\小傅哥技术项目学习文档.md not in C:\Users\24209\Desktop, C:\Users\24209\Desktop]]
+java.lang.IllegalStateException: Error calling tool: [TextContent[audience=null, priority=null, text=Access denied - path outside allowed directories: D:\小傅哥技术项目学习文档.md not in C:\Users\24209\Desktop, C:\Users\24209\Desktop]]
+	at org.springframework.ai.mcp.SyncMcpToolCallback.call(SyncMcpToolCallback.java:118)
+	at org.springframework.ai.mcp.SyncMcpToolCallback.call(SyncMcpToolCallback.java:126)
+	at org.springframework.ai.model.tool.DefaultToolCallingManager.lambda$executeToolCall$5(DefaultToolCallingManager.java:224)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCall(DefaultToolCallingManager.java:221)
+	at org.springframework.ai.model.tool.DefaultToolCallingManager.executeToolCalls(DefaultToolCallingManager.java:137)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:244)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:181)
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor.adviseCall(SimpleLoggerAdvisor.java:74)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.advisor.api.BaseAdvisor.adviseCall(BaseAdvisor.java:52)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:110)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:110)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:469)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:467)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:446)
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:441)
+	at top.daoha.test.ai.AutoAgentTest.test_dynamic_multi_step_execution(AutoAgentTest.java:619)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
