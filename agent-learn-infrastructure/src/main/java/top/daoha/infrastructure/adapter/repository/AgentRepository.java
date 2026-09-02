@@ -15,7 +15,7 @@ import top.daoha.infrastructure.dao.po.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static top.daoha.domain.agent.model.valobj.AiAgentEnumVO.*;
+import static top.daoha.domain.agent.model.valobj.enums.AiAgentEnumVO.*;
 
 
 /**
@@ -491,6 +491,29 @@ public class AgentRepository implements IAgentRepository {
                     result.add(modelVO);
                 }
             }
+        }
+
+        return result;
+    }
+
+    @Override
+    public Map<String, AiAgentClientFlowConfigVO> queryAiAgentClientFlowConfig(String aiAgentId) {
+        // 1. 根据智能体ID查询关联的客户端配置列表（已按 sequence 升序排序）
+        List<AiAgentFlowConfig> flowConfigList = aiAgentFlowConfigDao.queryByAgentId(aiAgentId);
+        if (flowConfigList == null || flowConfigList.isEmpty()) {
+            return Map.of();
+        }
+
+        // 2. 转换为 VO，并以客户端类型 clientType 作为 key 组织成 Map（保留执行顺序）
+        Map<String, AiAgentClientFlowConfigVO> result = new LinkedHashMap<>();
+        for (AiAgentFlowConfig config : flowConfigList) {
+            AiAgentClientFlowConfigVO vo = AiAgentClientFlowConfigVO.builder()
+                    .clientId(config.getClientId())
+                    .clientName(config.getClientName())
+                    .clientType(config.getClientType())
+                    .sequence(config.getSequence())
+                    .build();
+            result.put(vo.getClientType(), vo);
         }
 
         return result;

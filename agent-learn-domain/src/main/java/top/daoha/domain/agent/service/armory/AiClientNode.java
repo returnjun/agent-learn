@@ -10,12 +10,11 @@ import org.springframework.ai.mcp.SyncMcpToolCallbackProvider;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.stereotype.Service;
 import top.daoha.domain.agent.model.entity.ArmoryCommandEntity;
-import top.daoha.domain.agent.model.valobj.AiAgentEnumVO;
+import top.daoha.domain.agent.model.valobj.enums.AiAgentEnumVO;
 import top.daoha.domain.agent.model.valobj.AiClientSystemPromptVO;
 import top.daoha.domain.agent.model.valobj.AiClientVO;
 import top.daoha.domain.agent.service.armory.factory.DefaultArmoryStrategyFactory;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

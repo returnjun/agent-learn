@@ -67,7 +67,7 @@ public class AutoAgentTest {
         chatModel = OpenAiChatModel.builder()
                 .openAiApi(openAiApi)
                 .defaultOptions(OpenAiChatOptions.builder()
-                        .model("gpt-5.4-mini")
+                        .model("gpt-4o-mini")
                         .toolCallbacks(new SyncMcpToolCallbackProvider(stdioMcpClient(),sseMcpClient()).getToolCallbacks())
                         .build())
                 .build();
@@ -978,7 +978,7 @@ public class AutoAgentTest {
                 .build();
 
         var mcpClient = McpClient.sync(new StdioClientTransport(stdioParams))
-                .requestTimeout(Duration.ofSeconds(10)).build();
+                .requestTimeout(Duration.ofMinutes(1)).build();
 
         var init = mcpClient.initialize();
         System.out.println("Stdio MCP Initialized: " + init);
@@ -992,7 +992,7 @@ public class AutoAgentTest {
                 .build();
 
         McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport)
-                .requestTimeout(Duration.ofMinutes(360))
+                .requestTimeout(Duration.ofMinutes(1))
                 .build();
 
         var initialize = mcpSyncClient.initialize();
@@ -1006,7 +1006,7 @@ public class AutoAgentTest {
                 .build();
 
         McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport)
-                .requestTimeout(Duration.ofMinutes(360))
+                .requestTimeout(Duration.ofMinutes(1))
                 .build();
 
         var initialize = mcpSyncClient.initialize();

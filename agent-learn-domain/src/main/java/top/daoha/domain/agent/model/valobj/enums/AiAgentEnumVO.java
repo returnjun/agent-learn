@@ -1,4 +1,4 @@
-package top.daoha.domain.agent.model.valobj;
+package top.daoha.domain.agent.model.valobj.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

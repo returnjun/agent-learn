@@ -16,7 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import top.daoha.domain.agent.model.entity.ArmoryCommandEntity;
-import top.daoha.domain.agent.model.valobj.AiAgentEnumVO;
+import top.daoha.domain.agent.model.valobj.enums.AiAgentEnumVO;
 import top.daoha.domain.agent.service.armory.factory.DefaultArmoryStrategyFactory;
 
 import java.util.Arrays;

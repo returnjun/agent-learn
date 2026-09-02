@@ -8,8 +8,8 @@ import org.springframework.ai.chat.client.advisor.api.Advisor;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.stereotype.Service;
 import top.daoha.domain.agent.model.entity.ArmoryCommandEntity;
-import top.daoha.domain.agent.model.valobj.AiAgentEnumVO;
-import top.daoha.domain.agent.model.valobj.AiClientAdvisorTypeEnumVO;
+import top.daoha.domain.agent.model.valobj.enums.AiAgentEnumVO;
+import top.daoha.domain.agent.model.valobj.enums.AiClientAdvisorTypeEnumVO;
 import top.daoha.domain.agent.model.valobj.AiClientAdvisorVO;
 import top.daoha.domain.agent.service.armory.factory.DefaultArmoryStrategyFactory;
 

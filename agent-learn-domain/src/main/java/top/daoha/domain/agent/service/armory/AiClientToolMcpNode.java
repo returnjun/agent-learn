@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import top.daoha.domain.agent.model.entity.ArmoryCommandEntity;
-import top.daoha.domain.agent.model.valobj.AiAgentEnumVO;
+import top.daoha.domain.agent.model.valobj.enums.AiAgentEnumVO;
 import top.daoha.domain.agent.model.valobj.AiClientToolMcpVO;
 import top.daoha.domain.agent.service.armory.factory.DefaultArmoryStrategyFactory;
 
@@ -100,7 +100,7 @@ public class AiClientToolMcpNode extends AbstractArmorySupport {
                         .build();
 
                 McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport)
-                        .requestTimeout(Duration.ofMinutes(aiClientToolMcpVO.getRequestTimeout())).build();
+                        .requestTimeout(Duration.ofMinutes(1)).build();
                 var init_sse = mcpSyncClient.initialize();
 
                 log.info("Tool SSE MCP Initialized {}", init_sse);
@@ -118,7 +118,7 @@ public class AiClientToolMcpNode extends AbstractArmorySupport {
                         .build();
 
                 var mcpClient = McpClient.sync(new StdioClientTransport(stdioParams))
-                        .requestTimeout(Duration.ofSeconds(aiClientToolMcpVO.getRequestTimeout())).build();
+                        .requestTimeout(Duration.ofMinutes(1)).build();
                 var init_stdio = mcpClient.initialize();
 
                 log.info("Tool Stdio MCP Initialized {}", init_stdio);

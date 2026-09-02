@@ -10,7 +10,7 @@ import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.ai.openai.api.OpenAiApi;
 import org.springframework.stereotype.Service;
 import top.daoha.domain.agent.model.entity.ArmoryCommandEntity;
-import top.daoha.domain.agent.model.valobj.AiAgentEnumVO;
+import top.daoha.domain.agent.model.valobj.enums.AiAgentEnumVO;
 import top.daoha.domain.agent.model.valobj.AiClientModelVO;
 import top.daoha.domain.agent.service.armory.factory.DefaultArmoryStrategyFactory;
 

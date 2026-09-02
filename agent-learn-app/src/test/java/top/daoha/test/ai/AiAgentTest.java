@@ -294,7 +294,7 @@ public class AiAgentTest {
                 .build();
 
         var mcpClient = McpClient.sync(new StdioClientTransport(stdioParams))
-                .requestTimeout(Duration.ofSeconds(10)).build();
+                .requestTimeout(Duration.ofMinutes(1)).build();
 
         var init = mcpClient.initialize();
         System.out.println("Stdio MCP Initialized: " + init);
@@ -306,7 +306,7 @@ public class AiAgentTest {
 
         HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("http://82.157.190.244:8102").build();
 
-        McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport).requestTimeout(Duration.ofMinutes(180)).build();
+        McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport).requestTimeout(Duration.ofMinutes(1)).build();
 
         var init = mcpSyncClient.initialize();
         System.out.println("SSE MCP Initialized: " + init);
@@ -318,7 +318,7 @@ public class AiAgentTest {
 
         HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("http://82.157.190.244:8101").build();
 
-        McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport).requestTimeout(Duration.ofMinutes(180)).build();
+        McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport).requestTimeout(Duration.ofMinutes(1)).build();
 
         var init = mcpSyncClient.initialize();
         System.out.println("SSE MCP Initialized: " + init);

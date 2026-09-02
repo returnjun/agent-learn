@@ -39,7 +39,7 @@ public interface IAiAgentFlowConfigDao {
      * @param agentId 智能体ID
      * @return 影响行数
      */
-    int deleteByAgentId(Long agentId);
+    int deleteByAgentId(String agentId);
 
     /**
      * 根据ID查询智能体-客户端关联配置
@@ -53,14 +53,14 @@ public interface IAiAgentFlowConfigDao {
      * @param agentId 智能体ID
      * @return 智能体-客户端关联配置列表
      */
-    List<AiAgentFlowConfig> queryByAgentId(Long agentId);
+    List<AiAgentFlowConfig> queryByAgentId(String agentId);
 
     /**
      * 根据客户端ID查询关联配置列表
      * @param clientId 客户端ID
      * @return 智能体-客户端关联配置列表
      */
-    List<AiAgentFlowConfig> queryByClientId(Long clientId);
+    List<AiAgentFlowConfig> queryByClientId(String clientId);
 
     /**
      * 根据智能体ID和客户端ID查询关联配置
@@ -68,7 +68,7 @@ public interface IAiAgentFlowConfigDao {
      * @param clientId 客户端ID
      * @return 智能体-客户端关联配置对象
      */
-    AiAgentFlowConfig queryByAgentIdAndClientId(Long agentId, Long clientId);
+    AiAgentFlowConfig queryByAgentIdAndClientId(String agentId, String clientId);
 
     /**
      * 查询所有智能体-客户端关联配置

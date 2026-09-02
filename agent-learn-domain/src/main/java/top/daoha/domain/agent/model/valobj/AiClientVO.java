@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import top.daoha.domain.agent.model.valobj.enums.AiAgentEnumVO;
 
 import java.util.ArrayList;
 import java.util.List;

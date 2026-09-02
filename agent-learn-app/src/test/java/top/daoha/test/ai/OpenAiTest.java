@@ -231,7 +231,7 @@ public class OpenAiTest {
                     .build();
 
             McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport)
-                    .requestTimeout(Duration.ofMinutes(360))
+                    .requestTimeout(Duration.ofMinutes(1))
                     .build();
 
             var initialize = mcpSyncClient.initialize();
@@ -245,7 +245,7 @@ public class OpenAiTest {
                     .build();
 
             McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport)
-                    .requestTimeout(Duration.ofMinutes(360))
+                    .requestTimeout(Duration.ofMinutes(1))
                     .build();
 
             var initialize = mcpSyncClient.initialize();
