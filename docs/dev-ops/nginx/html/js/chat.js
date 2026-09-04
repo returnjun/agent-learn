@@ -4,13 +4,16 @@
     const isLocalPage = window.location.protocol === 'file:'
         || window.location.hostname === 'localhost'
         || window.location.hostname === '127.0.0.1';
-    const API_BASE = isLocalPage ? 'http://127.0.0.1:8091/api/v1' : '/api/v1';
+    const localBackendHost = window.location.hostname === 'localhost' ? 'localhost' : '127.0.0.1';
+    const API_BASE = isLocalPage ? `http://${localBackendHost}:8091/api/v1` : '/api/v1';
     const URLS = {
         ragUpload: `${API_BASE}/rag/file/upload`,
         ragGit: `${API_BASE}/rag/analyze_git_repository`,
         ragTags: `${API_BASE}/rag/query_rag_tag_list`,
         agent: `${API_BASE}/agent/auto_agent`,
-        conversations: `${API_BASE}/conversations`
+        conversations: `${API_BASE}/conversations`,
+        authStatus: `${API_BASE}/auth/status`,
+        logout: `${API_BASE}/auth/logout`
     };
 
     const MODE_COPY = {
@@ -115,8 +118,45 @@
         );
     }
 
+    function redirectToLogin() {
+        window.location.replace('./login.html');
+    }
+
+    async function requireAuthentication() {
+        try {
+            const response = await fetch(URLS.authStatus, { credentials: 'include' });
+            const result = await response.json();
+            if (response.ok && result.code === '0000' && result.data === true) {
+                elements.body.classList.remove('auth-pending');
+                return true;
+            }
+        } catch (error) {
+            console.error('登录状态校验失败:', error);
+        }
+        redirectToLogin();
+        return false;
+    }
+
+    async function authenticatedFetch(url, options = {}) {
+        const response = await fetch(url, { ...options, credentials: 'include' });
+        if (response.status === 401) {
+            redirectToLogin();
+            throw new Error('登录已失效');
+        }
+        return response;
+    }
+
+    async function logout() {
+        abortGeneration();
+        try {
+            await authenticatedFetch(URLS.logout, { method: 'POST' });
+        } finally {
+            redirectToLogin();
+        }
+    }
+
     async function apiRequest(url, options = {}) {
-        const response = await fetch(url, options);
+        const response = await authenticatedFetch(url, options);
         let result;
         try {
             result = await response.json();
@@ -682,7 +722,10 @@
         });
         if (selectedRagTag) params.set('ragTag', selectedRagTag);
 
-        const eventSource = new EventSource(`${API_BASE}/rag/${path}?${params.toString()}`);
+        const eventSource = new EventSource(
+            `${API_BASE}/rag/${path}?${params.toString()}`,
+            { withCredentials: true }
+        );
         generation.abort = () => eventSource.close();
 
         eventSource.onmessage = (event) => {
@@ -715,7 +758,7 @@
         generation.abort = () => abortController.abort();
 
         try {
-            const response = await fetch(URLS.agent, {
+            const response = await authenticatedFetch(URLS.agent, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -797,7 +840,7 @@
         const selectedValue = elements.ragSelect.value;
         elements.ragSelect.innerHTML = '<option value="">普通对话 (不使用知识库)</option>';
         try {
-            const response = await fetch(URLS.ragTags);
+            const response = await authenticatedFetch(URLS.ragTags);
             const result = await response.json();
             if (result.code === '0000' && Array.isArray(result.data)) {
                 result.data.forEach((tag) => addRagOption(tag));
@@ -837,7 +880,7 @@
         empty.textContent = '暂无知识库数据';
 
         try {
-            const response = await fetch(URLS.ragTags);
+            const response = await authenticatedFetch(URLS.ragTags);
             const result = await response.json();
             loading.classList.add('hidden');
             if (result.code !== '0000' || !Array.isArray(result.data) || result.data.length === 0) {
@@ -878,6 +921,7 @@
 
     function bindEvents() {
         elements.modeToggle.addEventListener('click', toggleMode);
+        document.getElementById('logout-button').addEventListener('click', logout);
         document.getElementById('new-chat-button').addEventListener('click', createNewConversation);
         document.getElementById('refresh-rag-button').addEventListener('click', loadRagTagsForSelect);
         document.getElementById('open-tags-button').addEventListener('click', openTagsModal);
@@ -930,7 +974,7 @@
         Array.from(fileInput.files).forEach((file) => formData.append('file', file));
 
         try {
-            const response = await fetch(URLS.ragUpload, { method: 'POST', body: formData });
+            const response = await authenticatedFetch(URLS.ragUpload, { method: 'POST', body: formData });
             const result = await response.json();
             if (result.code !== '0000') throw new Error(result.info || '上传失败');
             window.alert('上传成功！');
@@ -961,7 +1005,7 @@
         const body = new URLSearchParams({ reUrl: repositoryUrl, userName: username, token });
 
         try {
-            const response = await fetch(URLS.ragGit, {
+            const response = await authenticatedFetch(URLS.ragGit, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: body.toString()
@@ -987,6 +1031,7 @@
     }
 
     async function init() {
+        if (!await requireAuthentication()) return;
         bindEvents();
         renderConversationList();
         renderMessages();

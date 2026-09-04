@@ -1,3 +1,7 @@
+.auth-pending {
+    visibility: hidden;
+}
+
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }

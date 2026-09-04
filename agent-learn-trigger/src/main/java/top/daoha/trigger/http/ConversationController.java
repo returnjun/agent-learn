@@ -24,7 +24,7 @@ import java.util.Set;
 
 @Slf4j
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(originPatterns = {"http://localhost:*", "http://127.0.0.1:*"}, allowCredentials = "true")
 @RequestMapping("/api/v1/conversations")
 public class ConversationController {
 

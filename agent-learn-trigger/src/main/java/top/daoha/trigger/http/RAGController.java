@@ -36,7 +36,7 @@ import java.util.stream.Collectors;
 @Slf4j
 
 @RestController()
-@CrossOrigin("*")
+@CrossOrigin(originPatterns = {"http://localhost:*", "http://127.0.0.1:*"}, allowCredentials = "true")
 @RequestMapping("/api/v1/rag")
 public class RAGController implements IRAGService, IAiService {
 

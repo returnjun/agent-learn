@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系统登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<main class="login-card">
+    <h1>系统登录</h1>
+    <p>请输入账号和密码</p>
+
+    <form id="login-form">
+        <label for="username">账号</label>
+        <input id="username" name="username" type="text" autocomplete="username" required autofocus>
+
+        <label for="password">密码</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+
+        <div id="login-error" class="login-error" role="alert"></div>
+        <button id="login-button" type="submit">登录</button>
+    </form>
+</main>
+
+<script src="./js/login.js" defer></script>
+</body>
+</html>

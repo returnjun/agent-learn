@@ -3953,3 +3953,850 @@ Caused by: java.util.concurrent.TimeoutException: Did not observe any item or te
 26-09-04.22:49:07.381 [SpringApplicationShutdownHook] INFO  HikariDataSource       - PgVectorHikariPool - Shutdown completed.
 26-09-04.22:49:07.382 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
 26-09-04.22:49:07.389 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-09-04.23:06:50.701 [main            ] INFO  Application            - Starting Application using Java 17 with PID 12100 (D:\self_study\java学习\agent学习\agent-learn\agent-learn-app\target\classes started by 24209 in D:\self_study\java学习\agent学习\agent-learn)
+26-09-04.23:06:50.702 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-09-04.23:06:52.578 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+26-09-04.23:06:52.592 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-09-04.23:06:52.594 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-09-04.23:06:52.594 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+26-09-04.23:06:52.681 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-09-04.23:06:52.682 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1944 ms
+26-09-04.23:06:53.562 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-09-04.23:06:53.567 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-09-04.23:06:53.567 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-09-04.23:06:54.174 [main            ] INFO  Version                - Redisson 3.44.0
+26-09-04.23:06:54.557 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+26-09-04.23:06:54.576 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+26-09-04.23:06:54.734 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-09-04.23:06:55.240 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-09-04.23:06:55.257 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+26-09-04.23:06:55.265 [main            ] INFO  Application            - Started Application in 5.167 seconds (process running for 6.0)
+26-09-04.23:06:55.268 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3002, 3101, 3102, 3103, 3104])
+26-09-04.23:06:55.269 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:06:55.271 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:06:55.271 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:06:55.271 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:06:55.271 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:06:55.272 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:06:55.272 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:06:55.291 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-09-04.23:06:55.565 [pool-2-thread-4 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@3908c1cc
+26-09-04.23:06:55.566 [pool-2-thread-4 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-09-04.23:06:55.800 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:06:55.801 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:06:55.808 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1002
+26-09-04.23:06:55.813 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-09-04.23:06:55.813 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:06:56.112 [HttpClient-15-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-09-04.23:06:56.171 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-09-04.23:06:56.173 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-09-04.23:06:56.303 [HttpClient-16-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-09-04.23:06:56.348 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-09-04.23:06:56.348 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-09-04.23:07:13.564 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 241c96fa-0
+26-09-04.23:07:13.785 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id aecae44d-0
+26-09-04.23:07:13.785 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 660ef561-0
+26-09-04.23:07:13.825 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 3cbccddf-0
+26-09-04.23:07:13.827 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 241c96fa-1
+26-09-04.23:07:13.827 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id aecae44d-1
+26-09-04.23:07:13.853 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id aecae44d-2
+26-09-04.23:07:13.853 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 241c96fa-2
+26-09-04.23:07:13.987 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 241c96fa-3
+26-09-04.23:07:14.000 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id aecae44d-3
+26-09-04.23:07:31.929 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+26-09-04.23:07:31.945 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+26-09-04.23:07:31.945 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=secure-filesystem-server, version=0.2.0], instructions=null]
+26-09-04.23:07:31.946 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5003
+26-09-04.23:07:31.949 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'C:\\Users\\24209\\Desktop', 'C:\\Users\\24209\\Desktop' ]
+26-09-04.23:07:32.392 [HttpClient-17-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=amap-sse-server, version=1.0.0] and Instructions null
+26-09-04.23:07:32.558 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=amap-sse-server, version=1.0.0], instructions=null]
+26-09-04.23:07:32.558 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5005
+26-09-04.23:07:32.924 [HttpClient-18-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+26-09-04.23:07:32.985 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+26-09-04.23:07:32.986 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+26-09-04.23:07:32.986 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:07:32.987 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2002
+26-09-04.23:07:33.419 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+26-09-04.23:07:33.419 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:07:33.426 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+26-09-04.23:07:33.427 [main            ] INFO  AiClientNode           - Ai Agent 构建，Client最终构建节点 {"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:07:33.431 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3002
+26-09-04.23:07:33.433 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+26-09-04.23:07:33.433 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+26-09-04.23:07:33.433 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+26-09-04.23:07:33.433 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+26-09-04.23:07:33.433 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+26-09-04.23:08:21.909 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id e098132b-0
+26-09-04.23:08:21.909 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 566daf4a-0
+26-09-04.23:08:21.909 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id fb96554c-0
+26-09-04.23:08:21.921 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 34ab488a-0
+26-09-04.23:08:21.939 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 566daf4a-1
+26-09-04.23:08:21.965 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id e098132b-1
+26-09-04.23:08:21.988 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 566daf4a-2
+26-09-04.23:08:21.996 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id e098132b-2
+26-09-04.23:08:22.145 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 566daf4a-3
+26-09-04.23:08:22.145 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id e098132b-3
+26-09-04.23:09:29.905 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 81e9e059-0
+26-09-04.23:09:30.038 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 25d70aff-0
+26-09-04.23:09:30.080 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 96f69925-0
+26-09-04.23:09:30.134 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id af639419-0
+26-09-04.23:09:30.134 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 81e9e059-1
+26-09-04.23:09:30.162 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 25d70aff-1
+26-09-04.23:09:30.169 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 81e9e059-2
+26-09-04.23:09:30.180 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 25d70aff-2
+26-09-04.23:09:30.320 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 81e9e059-3
+26-09-04.23:09:30.330 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 25d70aff-3
+26-09-04.23:10:27.033 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-09-04.23:10:27.233 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-09-04.23:10:27.254 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-09-04.23:10:27.260 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-09-04.23:13:41.906 [main            ] INFO  Application            - Starting Application using Java 17 with PID 42496 (D:\self_study\java学习\agent学习\agent-learn\agent-learn-app\target\classes started by 24209 in D:\self_study\java学习\agent学习\agent-learn)
+26-09-04.23:13:41.909 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-09-04.23:13:43.560 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+26-09-04.23:13:43.573 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-09-04.23:13:43.574 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-09-04.23:13:43.575 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+26-09-04.23:13:43.653 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-09-04.23:13:43.654 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1710 ms
+26-09-04.23:13:44.355 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-09-04.23:13:44.358 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-09-04.23:13:44.358 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-09-04.23:13:44.883 [main            ] INFO  Version                - Redisson 3.44.0
+26-09-04.23:13:45.226 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+26-09-04.23:13:45.248 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+26-09-04.23:13:45.399 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-09-04.23:13:45.852 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-09-04.23:13:45.862 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+26-09-04.23:13:45.870 [main            ] INFO  Application            - Started Application in 4.477 seconds (process running for 5.17)
+26-09-04.23:13:45.872 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3002, 3101, 3102, 3103, 3104])
+26-09-04.23:13:45.872 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:13:45.874 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:13:45.874 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:13:45.875 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:13:45.875 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:13:45.875 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:13:45.875 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:13:45.891 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-09-04.23:13:46.114 [pool-2-thread-5 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@7160b195
+26-09-04.23:13:46.115 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-09-04.23:13:46.319 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:13:46.319 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:13:46.326 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1002
+26-09-04.23:13:46.336 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-09-04.23:13:46.337 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:13:46.660 [HttpClient-15-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-09-04.23:13:46.760 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-09-04.23:13:46.762 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-09-04.23:13:46.906 [HttpClient-16-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-09-04.23:13:46.936 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-09-04.23:13:46.936 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-09-04.23:13:51.381 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+26-09-04.23:13:51.396 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+26-09-04.23:13:51.396 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=secure-filesystem-server, version=0.2.0], instructions=null]
+26-09-04.23:13:51.396 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5003
+26-09-04.23:13:51.398 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'C:\\Users\\24209\\Desktop', 'C:\\Users\\24209\\Desktop' ]
+26-09-04.23:13:51.892 [HttpClient-17-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=amap-sse-server, version=1.0.0] and Instructions null
+26-09-04.23:13:52.067 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=amap-sse-server, version=1.0.0], instructions=null]
+26-09-04.23:13:52.067 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5005
+26-09-04.23:13:52.321 [HttpClient-18-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+26-09-04.23:13:52.390 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+26-09-04.23:13:52.390 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+26-09-04.23:13:52.390 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:13:52.392 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2002
+26-09-04.23:13:52.850 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+26-09-04.23:13:52.850 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:13:52.855 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+26-09-04.23:13:52.855 [main            ] INFO  AiClientNode           - Ai Agent 构建，Client最终构建节点 {"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:13:52.859 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3002
+26-09-04.23:13:52.860 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+26-09-04.23:13:52.860 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+26-09-04.23:13:52.860 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+26-09-04.23:13:52.860 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+26-09-04.23:13:52.860 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+26-09-04.23:14:02.784 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id fc45085e-0
+26-09-04.23:14:02.784 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id b554d749-0
+26-09-04.23:14:02.785 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id a3eee7e5-0
+26-09-04.23:14:02.785 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id dd111724-0
+26-09-04.23:14:02.785 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id b554d749-1
+26-09-04.23:14:02.800 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id fc45085e-1
+26-09-04.23:14:02.842 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id fc45085e-2
+26-09-04.23:14:02.842 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id b554d749-2
+26-09-04.23:14:03.066 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id b554d749-3
+26-09-04.23:14:03.069 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id fc45085e-3
+26-09-04.23:14:13.207 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-09-04.23:14:13.207 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-09-04.23:14:13.209 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+26-09-04.23:14:20.901 [http-nio-8091-exec-7] INFO  HikariDataSource       - PgVectorHikariPool - Starting...
+26-09-04.23:14:21.488 [http-nio-8091-exec-7] INFO  HikariPool             - PgVectorHikariPool - Added connection org.postgresql.jdbc.PgConnection@111ef697
+26-09-04.23:14:21.490 [http-nio-8091-exec-7] INFO  HikariDataSource       - PgVectorHikariPool - Start completed.
+26-09-04.23:15:10.877 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id fe5935ba-0
+26-09-04.23:15:10.959 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 1a5bf3d8-0
+26-09-04.23:15:11.121 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 6ce4e39b-0
+26-09-04.23:15:11.121 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b60f8ec7-0
+26-09-04.23:15:11.122 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id fe5935ba-1
+26-09-04.23:15:11.122 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 1a5bf3d8-1
+26-09-04.23:15:11.122 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id fe5935ba-2
+26-09-04.23:15:11.123 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 1a5bf3d8-2
+26-09-04.23:15:11.284 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 1a5bf3d8-3
+26-09-04.23:15:11.284 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id fe5935ba-3
+26-09-04.23:15:26.797 [http-nio-8091-exec-5] ERROR ConversationController - 保存会话消息失败, conversationId: chat-7c14c969-c806-46f5-bc62-98a126debc08, messageId: message-11cabb84-b07a-4f86-9d65-89dccc3cbd30
+org.springframework.dao.DeadlockLoserDataAccessException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Deadlock found when trying to get lock; try restarting transaction
+### The error may exist in file [D:\self_study\java学习\agent学习\agent-learn\agent-learn-app\target\classes\mybatis\mapper\ai_conversation_mapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE ai_conversation         SET updated_time = NOW()         WHERE id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Deadlock found when trying to get lock; try restarting transaction
+; Deadlock found when trying to get lock; try restarting transaction
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:278)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:234)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy98.updateTime(Unknown Source)
+	at top.daoha.infrastructure.adapter.repository.ConversationRepository.saveMessage(ConversationRepository.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at top.daoha.infrastructure.adapter.repository.ConversationRepository$$SpringCGLIB$$0.saveMessage(<generated>)
+	at top.daoha.domain.conversation.service.ConversationService.saveMessage(ConversationService.java:60)
+	at top.daoha.trigger.http.ConversationController.saveMessage(ConversationController.java:155)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at top.daoha.trigger.filter.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Deadlock found when trying to get lock; try restarting transaction
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 77 common frames omitted
+26-09-04.23:15:35.682 [boundedElastic-2] WARN  RequestMappingHandlerAdapter - !!!
+Performing asynchronous handling through the default Spring MVC SimpleAsyncTaskExecutor.
+This executor is not suitable for production use under load.
+Please, configure an AsyncTaskExecutor through the WebMvc config.
+-------------------------------
+!!!
+26-09-04.23:16:19.144 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 4f31a81d-0
+26-09-04.23:16:19.270 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 1f44b56f-0
+26-09-04.23:16:19.293 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id f825e82f-0
+26-09-04.23:16:19.301 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 35370638-0
+26-09-04.23:16:19.314 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 4f31a81d-1
+26-09-04.23:16:19.393 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 4f31a81d-2
+26-09-04.23:16:19.393 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 1f44b56f-1
+26-09-04.23:16:19.394 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 1f44b56f-2
+26-09-04.23:16:19.600 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 1f44b56f-3
+26-09-04.23:16:19.600 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 4f31a81d-3
+26-09-04.23:16:31.869 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-09-04.23:16:32.075 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-09-04.23:16:32.090 [SpringApplicationShutdownHook] INFO  HikariDataSource       - PgVectorHikariPool - Shutdown initiated...
+26-09-04.23:16:32.092 [SpringApplicationShutdownHook] INFO  HikariDataSource       - PgVectorHikariPool - Shutdown completed.
+26-09-04.23:16:32.093 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-09-04.23:16:32.098 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+26-09-04.23:26:22.478 [main            ] INFO  Application            - Starting Application using Java 17 with PID 35908 (D:\self_study\java学习\agent学习\agent-learn\agent-learn-app\target\classes started by 24209 in D:\self_study\java学习\agent学习\agent-learn)
+26-09-04.23:26:22.481 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-09-04.23:26:24.040 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+26-09-04.23:26:24.053 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-09-04.23:26:24.055 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-09-04.23:26:24.055 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+26-09-04.23:26:24.146 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-09-04.23:26:24.146 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1630 ms
+26-09-04.23:26:25.129 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+26-09-04.23:26:25.134 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+26-09-04.23:26:25.134 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+26-09-04.23:26:25.934 [main            ] INFO  Version                - Redisson 3.44.0
+26-09-04.23:26:26.445 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+26-09-04.23:26:26.473 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+26-09-04.23:26:26.710 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+26-09-04.23:26:27.420 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-09-04.23:26:27.433 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+26-09-04.23:26:27.447 [main            ] INFO  Application            - Started Application in 5.512 seconds (process running for 6.18)
+26-09-04.23:26:27.450 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3002, 3101, 3102, 3103, 3104])
+26-09-04.23:26:27.451 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:26:27.453 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:26:27.454 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:26:27.454 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:26:27.454 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:26:27.455 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:26:27.455 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3002, 3101, 3102, 3103, 3104]
+26-09-04.23:26:27.478 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+26-09-04.23:26:27.764 [pool-2-thread-6 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@49474552
+26-09-04.23:26:27.766 [pool-2-thread-6 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+26-09-04.23:26:28.100 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点 {"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:26:28.100 [main            ] INFO  AiClientApiNode        - Ai Agent 构建，API 构建节点 {"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:26:28.108 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1002
+26-09-04.23:26:28.115 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+26-09-04.23:26:28.115 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:26:28.547 [HttpClient-15-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+26-09-04.23:26:28.617 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-csdn, version=1.0.0], instructions=null]
+26-09-04.23:26:28.621 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5001
+26-09-04.23:26:28.790 [HttpClient-16-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+26-09-04.23:26:28.851 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=mcp-server-weixin, version=1.0.0], instructions=null]
+26-09-04.23:26:28.851 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5002
+26-09-04.23:26:31.086 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+26-09-04.23:26:31.105 [pool-4-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+26-09-04.23:26:31.106 [main            ] INFO  AiClientToolMcpNode    - Tool Stdio MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=secure-filesystem-server, version=0.2.0], instructions=null]
+26-09-04.23:26:31.106 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5003
+26-09-04.23:26:31.109 [pool-7-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'C:\\Users\\24209\\Desktop', 'C:\\Users\\24209\\Desktop' ]
+26-09-04.23:26:31.647 [HttpClient-17-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=amap-sse-server, version=1.0.0] and Instructions null
+26-09-04.23:26:31.787 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], serverInfo=Implementation[name=amap-sse-server, version=1.0.0], instructions=null]
+26-09-04.23:26:31.787 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5005
+26-09-04.23:26:32.186 [HttpClient-18-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+26-09-04.23:26:32.270 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+26-09-04.23:26:32.270 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+26-09-04.23:26:32.271 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:26:32.272 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2002
+26-09-04.23:26:32.839 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+26-09-04.23:26:32.839 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:26:32.851 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+26-09-04.23:26:32.851 [main            ] INFO  AiClientNode           - Ai Agent 构建，Client最终构建节点 {"commandIdList":["3002","3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+26-09-04.23:26:32.859 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3002
+26-09-04.23:26:32.862 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+26-09-04.23:26:32.862 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+26-09-04.23:26:32.863 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+26-09-04.23:26:32.863 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+26-09-04.23:26:32.863 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+26-09-04.23:26:33.330 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b50f49ac-0
+26-09-04.23:26:33.488 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id 8ac73c42-0
+26-09-04.23:26:33.488 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 3f0e3c06-0
+26-09-04.23:26:33.488 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id e0ea3ceb-0
+26-09-04.23:26:33.498 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b50f49ac-1
+26-09-04.23:26:33.586 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b50f49ac-2
+26-09-04.23:26:33.586 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id 8ac73c42-1
+26-09-04.23:26:33.587 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id 8ac73c42-2
+26-09-04.23:26:33.703 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b50f49ac-3
+26-09-04.23:26:33.705 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id 8ac73c42-3
+26-09-04.23:26:40.425 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-09-04.23:26:40.426 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-09-04.23:26:40.427 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-09-04.23:26:42.132 [http-nio-8091-exec-7] INFO  HikariDataSource       - PgVectorHikariPool - Starting...
+26-09-04.23:26:42.627 [http-nio-8091-exec-7] INFO  HikariPool             - PgVectorHikariPool - Added connection org.postgresql.jdbc.PgConnection@111ef697
+26-09-04.23:26:42.627 [http-nio-8091-exec-7] INFO  HikariDataSource       - PgVectorHikariPool - Start completed.
+26-09-04.23:27:41.484 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 74d258ff-0
+26-09-04.23:27:41.678 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 5bcb8d45-0
+26-09-04.23:27:41.706 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id a38f66df-0
+26-09-04.23:27:41.731 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 0e9b9fd5-0
+26-09-04.23:27:41.753 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 74d258ff-1
+26-09-04.23:27:41.788 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 5bcb8d45-1
+26-09-04.23:27:41.848 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 5bcb8d45-2
+26-09-04.23:27:41.848 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 74d258ff-2
+26-09-04.23:27:41.966 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 74d258ff-3
+26-09-04.23:27:41.966 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 5bcb8d45-3
+26-09-04.23:28:27.642 [http-nio-8091-exec-9] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"1","maxStep":3,"message":"查一下北京的未来几天的天气吧","sessionId":"agent-a409a560-b94a-42bf-ba5c-0095cedb5ae3"}
+26-09-04.23:28:27.646 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+26-09-04.23:28:27.646 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 查一下北京的未来几天的天气吧
+26-09-04.23:28:27.646 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 3
+26-09-04.23:28:27.646 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: agent-a409a560-b94a-42bf-ba5c-0095cedb5ae3
+26-09-04.23:28:27.657 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+26-09-04.23:28:27.657 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+26-09-04.23:28:47.413 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 === 第 1 步分析结果 ===
+26-09-04.23:28:47.413 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 任务状态分析:
+26-09-04.23:28:47.413 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📋 用户的真实需求是“查询北京未来几天的天气”，本质上是获取北京接下来 4 天左右的天气预报，并将结果直接、简洁地告知用户。当前已经完成天气查询，拿到了北京的逐日预报数据，信息足以直接回答问题。
+26-09-04.23:28:47.420 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📈 执行历史评估:
+26-09-04.23:28:47.420 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📊 已成功调用天气查询工具并获得有效结果，数据包含城市、日期、白天/夜间天气、最高/最低温、风向和风力。结果完整、可用，符合用户需求，没有额外补充检索的必要。
+26-09-04.23:28:47.420 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    📊 需要注意的是：返回的是从 2026-09-04 起的 4 天游览式预报，说明接口已提供“未来几天”范围内的天气信息。
+26-09-04.23:28:47.421 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🚀 下一步策略:
+26-09-04.23:28:47.421 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      -    🎯 直接将天气结果整理成用户易读的格式输出，建议按“日期 + 天气 + 温度 + 风向”展示，并补充一句整体趋势总结（如前几天晴热，后面转阴雨降温），让用户一眼看懂。无需再调用其他工具。
+26-09-04.23:28:47.421 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 完成度评估: ** 100%
+26-09-04.23:28:47.422 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🔄 任务状态: 继续执行
+26-09-04.23:28:47.422 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+⚡ 阶段2: 精准任务执行
+26-09-04.23:28:49.848 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ec38f15e-0
+26-09-04.23:28:49.848 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id cdc1e87f-0
+26-09-04.23:28:49.882 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 6c1a77e7-0
+26-09-04.23:28:49.903 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id b5e77c1b-0
+26-09-04.23:28:49.919 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ec38f15e-1
+26-09-04.23:28:49.934 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id cdc1e87f-1
+26-09-04.23:28:49.970 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ec38f15e-2
+26-09-04.23:28:50.053 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id cdc1e87f-2
+26-09-04.23:28:50.238 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ec38f15e-3
+26-09-04.23:28:50.238 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id cdc1e87f-3
+26-09-04.23:29:02.333 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+⚡ === 第 1 步执行结果 ===
+26-09-04.23:29:02.333 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+🎯 执行目标:
+26-09-04.23:29:02.333 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    🎯 查询并整理北京未来几天的天气预报，直接给出用户可读结果。
+26-09-04.23:29:02.334 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+🔧 执行过程:
+26-09-04.23:29:02.334 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 1. 调用天气查询工具，查询“北京”天气。
+26-09-04.23:29:02.334 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 2. 获取到北京市未来 4 天预报数据。
+26-09-04.23:29:02.334 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 3. 按“日期 + 天气 + 温度 + 风向”整理输出，并补充整体趋势说明。
+26-09-04.23:29:02.334 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+📈 执行结果:
+26-09-04.23:29:02.334 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 北京未来几天天气如下：
+26-09-04.23:29:02.334 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - **2026-09-04（周五）**：晴，**32℃ / 20℃**，南风 1-3 级
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - **2026-09-05（周六）**：晴，**31℃ / 20℃**，南风 1-3 级
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - **2026-09-06（周日）**：多云转阴，**30℃ / 20℃**，南风 1-3 级
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 - **2026-09-07（周一）**：小雨，**28℃ / 15℃**，东北风 1-3 级
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 **整体趋势:**
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    📊 前几天以晴热为主，后面云量增多，周一有小雨，气温也会明显下降。
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+🔍 质量检查:
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ✅ - 信息来源明确，已完成天气查询
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ✅ - 输出覆盖未来 4 天，满足“未来几天”需求
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode -    ✅ - 格式简洁清晰，便于用户快速查看
+26-09-04.23:29:02.335 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+🔍 阶段3: 质量监督检查
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+🔍 === 第 1 步监督结果 ===
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 **需求匹配度:**
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 执行结果与用户原始需求**高度匹配**。用户只是想知道“北京未来几天的天气”，而结果已经直接给出了北京未来 4 天的天气预报，包括日期、天气状况、最高/最低温度和风向风力，属于对问题的直接回答，没有明显偏题。
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 **内容完整性:**
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 内容整体**完整且实用**。
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 - 覆盖了“未来几天”的核心信息，且明确给出 4 天预报
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 - 包含了用户最关心的天气状态和温度区间
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 - 还附带了趋势总结，提升了可读性和实用性
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 - 格式清晰，适合用户快速浏览
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+⚠️ 问题识别:
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    ⚠️ 存在一些**轻微不足**，但不影响主需求完成：
+26-09-04.23:29:15.769 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    ⚠️ 1. 没有标注天气数据来源或更新时间，用户无法判断信息是否最新。
+26-09-04.23:29:15.770 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    ⚠️ 2. “未来几天”是模糊表述，结果默认给出 4 天，虽然合理，但最好说明“以下为未来 4 天预报”。
+26-09-04.23:29:15.770 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    ⚠️ 3. 输出里没有进一步给出生活建议，例如是否需要带伞、是否适合出行，但这不是硬性要求。
+26-09-04.23:29:15.770 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    ⚠️ 总体来看，执行结果**没有偏离用户真正需求**，也不是只描述过程，而是给出了实际答案。
+26-09-04.23:29:15.770 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+💡 改进建议:
+26-09-04.23:29:15.770 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    💡 - 增加一句“以下为北京未来 4 天天气预报”，让范围更明确。
+26-09-04.23:29:15.770 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    💡 - 如果可获取，补充数据更新时间或来源，提高可信度。
+26-09-04.23:29:15.770 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    💡 - 可在结尾加一句简短建议，例如“周一有雨，出门记得带伞”，增强实用性。
+26-09-04.23:29:15.770 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    💡 - 若天气接口支持，可补充今天或明天的小时级预报，让信息更细化。
+26-09-04.23:29:15.771 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+📊 质量评分: ** 9/10
+26-09-04.23:29:15.771 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+🔧 检查结果: 需要优化
+26-09-04.23:29:15.772 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - ✅ 质量检查通过
+26-09-04.23:29:15.772 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 执行第 2 步 ===
+26-09-04.23:29:15.772 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📊 阶段4: 执行总结分析
+26-09-04.23:29:15.772 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 动态多轮执行总结 ====
+26-09-04.23:29:15.772 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📈 总执行步数: 1 步
+26-09-04.23:29:15.772 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - ✅ 任务完成状态: 已完成
+26-09-04.23:29:15.772 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📊 执行效率: 100.0%
+26-09-04.23:29:15.772 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+--- 生成已完成任务的最终答案 ---
+26-09-04.23:29:21.657 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📋 === 已完成任务最终总结报告 ===
+26-09-04.23:29:21.657 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 北京未来 4 天天气如下：
+26-09-04.23:29:21.657 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - **2026-09-04（周五）**：晴，**32℃ / 20℃**，南风 1-3 级
+26-09-04.23:29:21.658 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - **2026-09-05（周六）**：晴，**31℃ / 20℃**，南风 1-3 级
+26-09-04.23:29:21.658 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - **2026-09-06（周日）**：多云转阴，**30℃ / 20℃**，南风 1-3 级
+26-09-04.23:29:21.658 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 - **2026-09-07（周一）**：小雨，**28℃ / 15℃**，东北风 1-3 级
+26-09-04.23:29:21.658 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 整体来看，**前几天晴热为主，周一开始转小雨，气温明显下降**。
+26-09-04.23:29:21.658 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 💡 **周一出门建议带伞。**
+26-09-04.23:29:21.659 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - ✅ 已发送完成标识
+26-09-04.23:29:21.659 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+🏁 === 动态多轮执行结束 ====
+26-09-04.23:29:21.659 [pool-2-thread-7 ] INFO  AutoAgentExecuteStrategy - 测试结果:ai agent execution summary completed!
+26-09-04.23:29:57.979 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 8d7bb231-0
+26-09-04.23:29:58.114 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 053551e6-0
+26-09-04.23:29:58.132 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 212f3038-0
+26-09-04.23:29:58.145 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ef48eb7d-0
+26-09-04.23:29:58.162 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 8d7bb231-1
+26-09-04.23:29:58.187 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 053551e6-1
+26-09-04.23:29:58.213 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 8d7bb231-2
+26-09-04.23:29:58.226 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 053551e6-2
+26-09-04.23:29:58.385 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 053551e6-3
+26-09-04.23:29:58.385 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 8d7bb231-3
+26-09-04.23:30:24.042 [http-nio-8091-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+26-09-04.23:30:24.043 [http-nio-8091-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+26-09-04.23:31:06.239 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 0ed5b8fc-0
+26-09-04.23:31:06.315 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id d22867a8-0
+26-09-04.23:31:06.328 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 9683a393-0
+26-09-04.23:31:06.353 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id c5fbfe87-0
+26-09-04.23:31:06.356 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 0ed5b8fc-1
+26-09-04.23:31:06.441 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id d22867a8-1
+26-09-04.23:31:06.441 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 0ed5b8fc-2
+26-09-04.23:31:06.441 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id d22867a8-2
+26-09-04.23:31:06.724 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 0ed5b8fc-3
+26-09-04.23:31:06.724 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id d22867a8-3
+26-09-04.23:31:41.093 [http-nio-8091-exec-3] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"1","maxStep":3,"message":"请你帮我搜索北京的互联网公司然后总结一下信息编写文件放在我的桌面","sessionId":"agent-651ceb7d-4572-4159-8bef-ce30ff935e75"}
+26-09-04.23:31:41.095 [pool-2-thread-8 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+26-09-04.23:31:41.095 [pool-2-thread-8 ] INFO  RootNode               - 用户输入: 请你帮我搜索北京的互联网公司然后总结一下信息编写文件放在我的桌面
+26-09-04.23:31:41.095 [pool-2-thread-8 ] INFO  RootNode               - 最大执行步数: 3
+26-09-04.23:31:41.095 [pool-2-thread-8 ] INFO  RootNode               - 会话ID: agent-651ceb7d-4572-4159-8bef-ce30ff935e75
+26-09-04.23:31:41.100 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+26-09-04.23:31:41.100 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+26-09-04.23:31:54.171 [HttpClient-17-Worker-4] ERROR HttpClientSseClientTransport - SSE connection error
+java.io.IOException: http1_0 content, bytes received: 9984
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:351)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:760)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
+26-09-04.23:31:54.174 [ForkJoinPool.commonPool-worker-3] ERROR HttpClientSseClientTransport - SSE connection error
+java.util.concurrent.CompletionException: java.io.IOException: http1_0 content, bytes received: 9984
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:874)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers.lambda$getBodyAsync$2(ResponseSubscribers.java:1152)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter$LineSubscription.loop(LineSubscriberAdapter.java:410)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter$LineSubscription.signalError(LineSubscriberAdapter.java:199)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter.onError(LineSubscriberAdapter.java:105)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.propagateError(Http1Response.java:327)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.complete(Http1Response.java:356)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.onError(Http1Response.java:386)
+	at java.net.http/jdk.internal.net.http.Http1Response.lambda$readBody$2(Http1Response.java:468)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Response.onReadError(Http1Response.java:554)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:761)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: http1_0 content, bytes received: 9984
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:351)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:760)
+	... 8 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
+26-09-04.23:31:55.994 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+📊 === 第 1 步分析结果 ===
+26-09-04.23:31:55.994 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+🎯 任务状态分析:
+26-09-04.23:31:55.994 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 当前任务处于**初始阶段**，用户的核心诉求非常明确：
+26-09-04.23:31:55.994 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 1. **搜索北京的互联网公司**，即需要收集一批位于北京的互联网企业信息；
+26-09-04.23:31:55.994 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 2. **对搜索结果进行总结**，把企业名称、主营方向、可能的代表性特点等整理成可读内容；
+26-09-04.23:31:55.994 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 3. **编写文件并放在桌面**，说明最终交付物不是单纯的文本回答，而是一个可保存的文档文件。
+26-09-04.23:31:55.994 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 从任务目标来看，这不是“只给出答案”，而是一个**信息检索 + 内容整理 + 文件落地**的复合任务。当前尚未开始实际搜索和文件生成，因此任务完成度为零到很低，主要停留在需求理解层面。
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+📈 执行历史评估:
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📊 历史记录显示为**首次执行**，没有已有成果、没有中间产物、也没有失败修正记录。
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📊 因此目前无法评价内容质量，只能判断：
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📊 - 尚未进行信息搜索；
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📊 - 尚未完成总结归纳；
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📊 - 尚未创建桌面文件；
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📊 - 没有出现路径、格式、内容范围等具体执行偏差。
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📊 换句话说，当前历史阶段是“待执行”，质量评估项尚未产生实际数据。
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+🚀 下一步策略:
+26-09-04.23:31:55.996 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 建议按以下步骤推进，确保最终能够直接交付一个可用文件：
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 1. **明确搜索范围**
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 以“北京 互联网公司”为核心关键词进行搜索；
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 优先选择知名度较高、信息较完整、与互联网行业直接相关的公司；
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 可覆盖不同细分领域，如：电商、社交、搜索、内容平台、出行、短视频、本地生活、云服务等。
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 2. **收集公司信息**
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 每家公司尽量整理以下字段：
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 公司名称
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 所属领域/业务方向
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 总部或主要办公地是否在北京
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 简要介绍
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 代表产品或服务
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 备注（如上市情况、行业地位等）
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 3. **生成总结内容**
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 将信息整理成结构化文档，建议采用以下组织形式：
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 标题
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 简介
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 公司列表（表格或分点）
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 简要总结
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 可选：按赛道分类的小结
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 4. **输出为文件并保存到桌面**
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 需要生成一个正式文档，例如 `.md`、`.txt` 或 `.docx`；
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 路径应指向桌面目录；
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 文件名建议清晰，如：`北京互联网公司调研汇总.md`。
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 5. **工具调用建议**
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 先调用搜索类工具获取北京互联网公司名单及基本信息；
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 再将搜索结果进行人工/模型总结；
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 - 最后调用文件写入工具创建桌面文件。
+26-09-04.23:31:55.997 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+📊 完成度评估: ** 0%
+26-09-04.23:31:55.998 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+🔄 任务状态: 继续执行
+26-09-04.23:31:55.998 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+⚡ 阶段2: 精准任务执行
+26-09-04.23:32:14.395 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 8522dbe1-0
+26-09-04.23:32:14.542 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id a4fa39c6-0
+26-09-04.23:32:14.542 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 3a3d8145-0
+26-09-04.23:32:14.553 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id ed0f0339-0
+26-09-04.23:32:14.740 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 8522dbe1-1
+26-09-04.23:32:14.743 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 8522dbe1-2
+26-09-04.23:32:14.743 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 3a3d8145-1
+26-09-04.23:32:14.743 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 3a3d8145-2
+26-09-04.23:32:14.848 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 8522dbe1-3
+26-09-04.23:32:14.848 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 3a3d8145-3
+26-09-04.23:32:54.616 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+⚡ === 第 1 步执行结果 ===
+26-09-04.23:32:54.616 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+🎯 执行目标:
+26-09-04.23:32:54.616 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    🎯 搜索北京的互联网公司，整理成简要汇总，并生成文件保存到桌面。
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+🔧 执行过程:
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 1. 先确认了可访问目录，桌面路径为 `C:\Users\24209\Desktop`。
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 2. 使用搜索工具检索“北京互联网公司”相关信息，并优先筛选了总部位于北京、具有代表性的企业。
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 3. 整理出一批北京互联网公司样本，覆盖内容平台、本地生活、电商、搜索、出行、智能硬件、在线视频、房产科技、云服务等方向。
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 4. 将整理好的内容写入 Markdown 文件，并保存到桌面。
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+📈 执行结果:
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 已成功生成文件：
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 `C:\Users\24209\Desktop\北京互联网公司调研汇总.md`
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 文件内容包含：
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 北京代表性互联网公司列表
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 按赛道分类的简要说明
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 北京互联网产业特点总结
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 参考信息来源说明
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+🔍 质量检查:
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ✅ - 文件已成功写入桌面，交付结果可直接使用。
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ✅ - 内容覆盖了多个北京互联网代表企业，结构清晰，适合快速浏览。
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ✅ - 由于本次以“初步汇总”为目标，内容偏概览型；如需更深入版本，可继续补充每家公司成立时间、融资/上市情况、员工规模、代表产品等维度。
+26-09-04.23:32:54.617 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+🔍 阶段3: 质量监督检查
+26-09-04.23:33:11.920 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+🔍 === 第 1 步监督结果 ===
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 **需求匹配度:**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 执行结果**部分匹配**用户原始需求。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 用户的核心需求有两部分：
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 1. 搜索北京的互联网公司并总结信息；
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 2. 将内容编写成文件放到桌面。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 当前执行结果明确声称已经完成了文件生成，并保存到了桌面，这一点表面上符合“交付文件”的要求；但结果中**没有展示实际整理出的公司名单、总结内容或文件正文摘要**，因此无法确认“搜索”和“总结”是否真正完成到位，也无法确认文件内容是否足够有用。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 总体来看，**有交付动作的描述，但缺少可验证的实际成果**。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 **内容完整性:**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 内容完整性**一般**。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 优点是已经覆盖了以下要素：
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 - 明确了桌面路径
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 - 声称已完成搜索和整理
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 - 声称已生成 Markdown 文件
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 - 提到了内容结构，包括公司列表、赛道分类、产业特点、参考来源
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 不足在于：
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 - **没有给出任何实际公司名称**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 - **没有给出总结后的核心信息**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 - **没有给出文件内容片段或结构化摘要**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 - **没有说明筛选标准、公司数量、信息来源可靠性**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 所以从“结果是否可直接使用”来看，当前输出更像是**任务完成声明**，而不是**可供用户立刻判断和使用的成果**。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+⚠️ 问题识别:
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ 1. **缺少实际内容展示**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ 用户需要的是“搜索结果 + 总结 + 文件”，但当前只看到“我已经做了”的描述，没有看到真正的总结正文。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ 2. **不可验证性较强**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ 结果称文件已保存到桌面，但没有附带文件内容摘要或至少列出若干公司名称，导致无法验证质量。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ 3. **偏过程描述，少结果呈现**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ 当前文本更多是在讲执行过程，而不是直接呈现交付物的有效内容。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ 4. **实用性不足**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ 如果用户现在想快速了解“北京有哪些互联网公司”，该结果不能直接回答；如果用户想确认文件内容是否可靠，也无法判断。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+💡 改进建议:
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 1. **直接展示文件核心内容**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 至少列出 5-10 家北京互联网公司，并附上每家的简要说明，例如：主营业务、代表产品、所属赛道。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 2. **增加结构化总结**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 建议文件中包含：
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 公司名称
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 所属领域
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 主要业务
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 总部是否在北京
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 简要点评
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 3. **说明信息来源与筛选标准**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 比如说明是基于公开资料、公司官网、行业报道整理，增强可信度。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 4. **让结果可直接使用**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 在反馈中给用户一个简洁预览，而不是只说“已完成”。例如可直接列出：
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 字节跳动
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 百度
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 美团
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 京东
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 快手
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 并附上简短总结。
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 5. **如要继续优化，建议补充更多维度**
+26-09-04.23:33:11.921 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 例如：成立时间、融资/上市情况、员工规模、代表产品、行业地位等。
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+📊 质量评分: ** 6/10
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+🔧 检查结果: 需要优化
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - ✅ 质量检查通过
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 执行第 2 步 ===
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+📊 阶段4: 执行总结分析
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 动态多轮执行总结 ====
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📈 总执行步数: 1 步
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - ✅ 任务完成状态: 已完成
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📊 执行效率: 100.0%
+26-09-04.23:33:11.922 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+--- 生成已完成任务的最终答案 ---
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+📋 === 已完成任务最终总结报告 ===
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 已经帮你整理好了，并生成文件放在桌面：
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 **文件路径：**
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 `C:\Users\24209\Desktop\北京互联网公司调研汇总.md`
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 **文件内容包含：**
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 北京代表性互联网公司列表
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 按赛道分类的简要说明
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 北京互联网产业特点总结
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 参考信息来源说明
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 **覆盖方向包括：**
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 内容平台
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 本地生活
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 电商
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 搜索
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 出行
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 智能硬件
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 在线视频
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 房产科技
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 云服务
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 如果你愿意，我还可以继续帮你把这份内容**扩展成更详细版本**，例如增加：
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 公司成立时间
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 主营业务
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 代表产品
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 是否上市
+26-09-04.23:33:22.128 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 行业地位对比
+26-09-04.23:33:22.129 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - ✅ 已发送完成标识
+26-09-04.23:33:22.129 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+🏁 === 动态多轮执行结束 ====
+26-09-04.23:33:22.129 [pool-2-thread-8 ] INFO  AutoAgentExecuteStrategy - 测试结果:ai agent execution summary completed!
+26-09-04.23:33:23.118 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id ba851ff0-0
+26-09-04.23:33:23.118 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 1428458e-0
+26-09-04.23:33:23.118 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id bb3433a2-0
+26-09-04.23:33:23.131 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 064f7555-0
+26-09-04.23:33:23.145 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id ba851ff0-1
+26-09-04.23:33:23.545 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id ba851ff0-2
+26-09-04.23:33:23.545 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 1428458e-1
+26-09-04.23:33:23.545 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id ba851ff0-3
+26-09-04.23:33:23.545 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 1428458e-2
+26-09-04.23:33:23.545 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 1428458e-3
+26-09-04.23:34:15.239 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+26-09-04.23:34:15.424 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+26-09-04.23:34:15.444 [SpringApplicationShutdownHook] INFO  HikariDataSource       - PgVectorHikariPool - Shutdown initiated...
+26-09-04.23:34:15.446 [SpringApplicationShutdownHook] INFO  HikariDataSource       - PgVectorHikariPool - Shutdown completed.
+26-09-04.23:34:15.447 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+26-09-04.23:34:15.452 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.

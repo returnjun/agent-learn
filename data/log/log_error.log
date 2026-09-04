@@ -2423,3 +2423,337 @@ Caused by: java.util.concurrent.TimeoutException: Did not observe any item or te
 26-09-04.22:49:03.071 [HttpClient-16-Worker-18] WARN  McpClientSession       - Unexpected response for unknown id ecd9ad92-2
 26-09-04.22:49:03.885 [HttpClient-15-Worker-19] WARN  McpClientSession       - Unexpected response for unknown id a0045059-3
 26-09-04.22:49:03.885 [HttpClient-16-Worker-18] WARN  McpClientSession       - Unexpected response for unknown id ecd9ad92-3
+26-09-04.23:07:13.564 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 241c96fa-0
+26-09-04.23:07:13.785 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id aecae44d-0
+26-09-04.23:07:13.785 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 660ef561-0
+26-09-04.23:07:13.825 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 3cbccddf-0
+26-09-04.23:07:13.827 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 241c96fa-1
+26-09-04.23:07:13.827 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id aecae44d-1
+26-09-04.23:07:13.853 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id aecae44d-2
+26-09-04.23:07:13.853 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 241c96fa-2
+26-09-04.23:07:13.987 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 241c96fa-3
+26-09-04.23:07:14.000 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id aecae44d-3
+26-09-04.23:08:21.909 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id e098132b-0
+26-09-04.23:08:21.909 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 566daf4a-0
+26-09-04.23:08:21.909 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id fb96554c-0
+26-09-04.23:08:21.921 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id 34ab488a-0
+26-09-04.23:08:21.939 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 566daf4a-1
+26-09-04.23:08:21.965 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id e098132b-1
+26-09-04.23:08:21.988 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 566daf4a-2
+26-09-04.23:08:21.996 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id e098132b-2
+26-09-04.23:08:22.145 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id 566daf4a-3
+26-09-04.23:08:22.145 [HttpClient-16-Worker-1] WARN  McpClientSession       - Unexpected response for unknown id e098132b-3
+26-09-04.23:09:29.905 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 81e9e059-0
+26-09-04.23:09:30.038 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 25d70aff-0
+26-09-04.23:09:30.080 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 96f69925-0
+26-09-04.23:09:30.134 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id af639419-0
+26-09-04.23:09:30.134 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 81e9e059-1
+26-09-04.23:09:30.162 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 25d70aff-1
+26-09-04.23:09:30.169 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 81e9e059-2
+26-09-04.23:09:30.180 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 25d70aff-2
+26-09-04.23:09:30.320 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 81e9e059-3
+26-09-04.23:09:30.330 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 25d70aff-3
+26-09-04.23:14:02.784 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id fc45085e-0
+26-09-04.23:14:02.784 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id b554d749-0
+26-09-04.23:14:02.785 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id a3eee7e5-0
+26-09-04.23:14:02.785 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id dd111724-0
+26-09-04.23:14:02.785 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id b554d749-1
+26-09-04.23:14:02.800 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id fc45085e-1
+26-09-04.23:14:02.842 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id fc45085e-2
+26-09-04.23:14:02.842 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id b554d749-2
+26-09-04.23:14:03.066 [HttpClient-15-Worker-0] WARN  McpClientSession       - Unexpected response for unknown id b554d749-3
+26-09-04.23:14:03.069 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id fc45085e-3
+26-09-04.23:15:10.877 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id fe5935ba-0
+26-09-04.23:15:10.959 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 1a5bf3d8-0
+26-09-04.23:15:11.121 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 6ce4e39b-0
+26-09-04.23:15:11.121 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b60f8ec7-0
+26-09-04.23:15:11.122 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id fe5935ba-1
+26-09-04.23:15:11.122 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 1a5bf3d8-1
+26-09-04.23:15:11.122 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id fe5935ba-2
+26-09-04.23:15:11.123 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 1a5bf3d8-2
+26-09-04.23:15:11.284 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 1a5bf3d8-3
+26-09-04.23:15:11.284 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id fe5935ba-3
+26-09-04.23:15:26.797 [http-nio-8091-exec-5] ERROR ConversationController - 保存会话消息失败, conversationId: chat-7c14c969-c806-46f5-bc62-98a126debc08, messageId: message-11cabb84-b07a-4f86-9d65-89dccc3cbd30
+org.springframework.dao.DeadlockLoserDataAccessException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Deadlock found when trying to get lock; try restarting transaction
+### The error may exist in file [D:\self_study\java学习\agent学习\agent-learn\agent-learn-app\target\classes\mybatis\mapper\ai_conversation_mapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE ai_conversation         SET updated_time = NOW()         WHERE id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Deadlock found when trying to get lock; try restarting transaction
+; Deadlock found when trying to get lock; try restarting transaction
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:278)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:234)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy98.updateTime(Unknown Source)
+	at top.daoha.infrastructure.adapter.repository.ConversationRepository.saveMessage(ConversationRepository.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at top.daoha.infrastructure.adapter.repository.ConversationRepository$$SpringCGLIB$$0.saveMessage(<generated>)
+	at top.daoha.domain.conversation.service.ConversationService.saveMessage(ConversationService.java:60)
+	at top.daoha.trigger.http.ConversationController.saveMessage(ConversationController.java:155)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at top.daoha.trigger.filter.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Deadlock found when trying to get lock; try restarting transaction
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 77 common frames omitted
+26-09-04.23:15:35.682 [boundedElastic-2] WARN  RequestMappingHandlerAdapter - !!!
+Performing asynchronous handling through the default Spring MVC SimpleAsyncTaskExecutor.
+This executor is not suitable for production use under load.
+Please, configure an AsyncTaskExecutor through the WebMvc config.
+-------------------------------
+!!!
+26-09-04.23:16:19.144 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 4f31a81d-0
+26-09-04.23:16:19.270 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 1f44b56f-0
+26-09-04.23:16:19.293 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id f825e82f-0
+26-09-04.23:16:19.301 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 35370638-0
+26-09-04.23:16:19.314 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 4f31a81d-1
+26-09-04.23:16:19.393 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 4f31a81d-2
+26-09-04.23:16:19.393 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 1f44b56f-1
+26-09-04.23:16:19.394 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 1f44b56f-2
+26-09-04.23:16:19.600 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 1f44b56f-3
+26-09-04.23:16:19.600 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 4f31a81d-3
+26-09-04.23:26:33.330 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b50f49ac-0
+26-09-04.23:26:33.488 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id 8ac73c42-0
+26-09-04.23:26:33.488 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 3f0e3c06-0
+26-09-04.23:26:33.488 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id e0ea3ceb-0
+26-09-04.23:26:33.498 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b50f49ac-1
+26-09-04.23:26:33.586 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b50f49ac-2
+26-09-04.23:26:33.586 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id 8ac73c42-1
+26-09-04.23:26:33.587 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id 8ac73c42-2
+26-09-04.23:26:33.703 [HttpClient-15-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id b50f49ac-3
+26-09-04.23:26:33.705 [HttpClient-16-Worker-2] WARN  McpClientSession       - Unexpected response for unknown id 8ac73c42-3
+26-09-04.23:27:41.484 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 74d258ff-0
+26-09-04.23:27:41.678 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 5bcb8d45-0
+26-09-04.23:27:41.706 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id a38f66df-0
+26-09-04.23:27:41.731 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 0e9b9fd5-0
+26-09-04.23:27:41.753 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 74d258ff-1
+26-09-04.23:27:41.788 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 5bcb8d45-1
+26-09-04.23:27:41.848 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 5bcb8d45-2
+26-09-04.23:27:41.848 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 74d258ff-2
+26-09-04.23:27:41.966 [HttpClient-15-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id 74d258ff-3
+26-09-04.23:27:41.966 [HttpClient-16-Worker-3] WARN  McpClientSession       - Unexpected response for unknown id 5bcb8d45-3
+26-09-04.23:28:49.848 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ec38f15e-0
+26-09-04.23:28:49.848 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id cdc1e87f-0
+26-09-04.23:28:49.882 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 6c1a77e7-0
+26-09-04.23:28:49.903 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id b5e77c1b-0
+26-09-04.23:28:49.919 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ec38f15e-1
+26-09-04.23:28:49.934 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id cdc1e87f-1
+26-09-04.23:28:49.970 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ec38f15e-2
+26-09-04.23:28:50.053 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id cdc1e87f-2
+26-09-04.23:28:50.238 [HttpClient-15-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ec38f15e-3
+26-09-04.23:28:50.238 [HttpClient-16-Worker-4] WARN  McpClientSession       - Unexpected response for unknown id cdc1e87f-3
+26-09-04.23:29:57.979 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 8d7bb231-0
+26-09-04.23:29:58.114 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 053551e6-0
+26-09-04.23:29:58.132 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 212f3038-0
+26-09-04.23:29:58.145 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id ef48eb7d-0
+26-09-04.23:29:58.162 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 8d7bb231-1
+26-09-04.23:29:58.187 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 053551e6-1
+26-09-04.23:29:58.213 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 8d7bb231-2
+26-09-04.23:29:58.226 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 053551e6-2
+26-09-04.23:29:58.385 [HttpClient-16-Worker-5] WARN  McpClientSession       - Unexpected response for unknown id 053551e6-3
+26-09-04.23:29:58.385 [HttpClient-15-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id 8d7bb231-3
+26-09-04.23:30:24.042 [http-nio-8091-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+26-09-04.23:30:24.043 [http-nio-8091-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+26-09-04.23:31:06.239 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 0ed5b8fc-0
+26-09-04.23:31:06.315 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id d22867a8-0
+26-09-04.23:31:06.328 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 9683a393-0
+26-09-04.23:31:06.353 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id c5fbfe87-0
+26-09-04.23:31:06.356 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 0ed5b8fc-1
+26-09-04.23:31:06.441 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id d22867a8-1
+26-09-04.23:31:06.441 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 0ed5b8fc-2
+26-09-04.23:31:06.441 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id d22867a8-2
+26-09-04.23:31:06.724 [HttpClient-15-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 0ed5b8fc-3
+26-09-04.23:31:06.724 [HttpClient-16-Worker-6] WARN  McpClientSession       - Unexpected response for unknown id d22867a8-3
+26-09-04.23:31:54.171 [HttpClient-17-Worker-4] ERROR HttpClientSseClientTransport - SSE connection error
+java.io.IOException: http1_0 content, bytes received: 9984
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:351)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:760)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
+26-09-04.23:31:54.174 [ForkJoinPool.commonPool-worker-3] ERROR HttpClientSseClientTransport - SSE connection error
+java.util.concurrent.CompletionException: java.io.IOException: http1_0 content, bytes received: 9984
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:874)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers.lambda$getBodyAsync$2(ResponseSubscribers.java:1152)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter$LineSubscription.loop(LineSubscriberAdapter.java:410)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter$LineSubscription.signalError(LineSubscriberAdapter.java:199)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter.onError(LineSubscriberAdapter.java:105)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.propagateError(Http1Response.java:327)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.complete(Http1Response.java:356)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.onError(Http1Response.java:386)
+	at java.net.http/jdk.internal.net.http.Http1Response.lambda$readBody$2(Http1Response.java:468)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Response.onReadError(Http1Response.java:554)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:761)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: http1_0 content, bytes received: 9984
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:351)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:760)
+	... 8 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:979)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:934)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:934)
+26-09-04.23:32:14.395 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 8522dbe1-0
+26-09-04.23:32:14.542 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id a4fa39c6-0
+26-09-04.23:32:14.542 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 3a3d8145-0
+26-09-04.23:32:14.553 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id ed0f0339-0
+26-09-04.23:32:14.740 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 8522dbe1-1
+26-09-04.23:32:14.743 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 8522dbe1-2
+26-09-04.23:32:14.743 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 3a3d8145-1
+26-09-04.23:32:14.743 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 3a3d8145-2
+26-09-04.23:32:14.848 [HttpClient-15-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 8522dbe1-3
+26-09-04.23:32:14.848 [HttpClient-16-Worker-7] WARN  McpClientSession       - Unexpected response for unknown id 3a3d8145-3
+26-09-04.23:33:23.118 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id ba851ff0-0
+26-09-04.23:33:23.118 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 1428458e-0
+26-09-04.23:33:23.118 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id bb3433a2-0
+26-09-04.23:33:23.131 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 064f7555-0
+26-09-04.23:33:23.145 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id ba851ff0-1
+26-09-04.23:33:23.545 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id ba851ff0-2
+26-09-04.23:33:23.545 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 1428458e-1
+26-09-04.23:33:23.545 [HttpClient-15-Worker-9] WARN  McpClientSession       - Unexpected response for unknown id ba851ff0-3
+26-09-04.23:33:23.545 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 1428458e-2
+26-09-04.23:33:23.545 [HttpClient-16-Worker-8] WARN  McpClientSession       - Unexpected response for unknown id 1428458e-3

@@ -23,7 +23,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 @Slf4j
 @RestController
 @RequestMapping("/api/v1/agent")
-@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS})
+@CrossOrigin(originPatterns = {"http://localhost:*", "http://127.0.0.1:*"}, allowCredentials = "true",
+        allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS})
 public class AiAgentController implements IAiAgentService {
 
     @Resource(name = "autoAgentExecuteStrategy")
