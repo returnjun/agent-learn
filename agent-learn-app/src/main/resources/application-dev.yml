@@ -17,10 +17,28 @@ spring:
   ai:
     openai:
       base-url: https://api2.aigcbest.top
-      api-key: sk-OjRkkYqhgZvLgmrPFAMFyIz2AjIMEcvB8Pdo4vfX8PkTVQWM
+      api-key: sk-qN3s0oXo3UkMbQpfdB6GbxpaPXSRtcVR0ib3ic7X2jIIupMq
       embedding:
         options:
           model: text-embedding-3-small
+    agent:
+      auto-config:
+        enabled: true
+        client-ids: 3002,3101,3102,3103,3104
+    vectorstore:
+      pgvector:
+        initialize-schema: true
+    ollama:
+      base-url: http://82.157.190.244:11434
+      embedding:
+        model: nomic-embed-text # 你的 embedding 模型名称
+        options:
+          num-ctx: 2048  # <-- 加上这一行，限制上下文长度
+        chat:
+          options:
+            num-ctx: 2048  # 建议把对话模型的上下文也同步限制一下
+    rag:
+      embed: nomic-embed-text
 
 
   datasource:
@@ -56,6 +74,21 @@ spring:
 #mybatis:
 #  mapper-locations: classpath:/mybatis/mapper/*.xml
 #  config-location:  classpath:/mybatis/config/mybatis-config.xml
+
+# Redis
+redis:
+  sdk:
+    config:
+      host: 127.0.0.1
+      port: 6379
+      pool-size: 10
+      min-idle-size: 5
+      idle-timeout: 30000
+      connect-timeout: 5000
+      retry-attempts: 3
+      retry-interval: 1000
+      ping-interval: 60000
+      keep-alive: true
 
 # 日志
 logging:

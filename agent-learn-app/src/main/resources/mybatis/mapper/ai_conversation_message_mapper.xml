@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.daoha.infrastructure.dao.IAiConversationMessageDao">
+
+    <resultMap id="AiConversationMessageMap" type="top.daoha.infrastructure.dao.po.AiConversationMessage">
+        <id column="id" property="id"/>
+        <result column="conversation_id" property="conversationId"/>
+        <result column="role" property="role"/>
+        <result column="content" property="content"/>
+        <result column="message_type" property="messageType"/>
+        <result column="status" property="status"/>
+        <result column="sort_order" property="sortOrder"/>
+        <result column="created_time" property="createdTime"/>
+        <result column="updated_time" property="updatedTime"/>
+    </resultMap>
+
+    <select id="queryByConversationId" resultMap="AiConversationMessageMap">
+        SELECT id, conversation_id, role, content, message_type, status,
+               sort_order, created_time, updated_time
+        FROM ai_conversation_message
+        WHERE conversation_id = #{conversationId}
+        ORDER BY sort_order ASC, created_time ASC
+    </select>
+
+    <insert id="insertOrUpdate" parameterType="top.daoha.infrastructure.dao.po.AiConversationMessage">
+        INSERT INTO ai_conversation_message (
+            id, conversation_id, role, content, message_type, status,
+            sort_order, created_time, updated_time
+        ) VALUES (
+            #{id}, #{conversationId}, #{role}, #{content}, #{messageType}, #{status},
+            #{sortOrder}, NOW(), NOW()
+        )
+        ON DUPLICATE KEY UPDATE
+            content = VALUES(content),
+            message_type = VALUES(message_type),
+            status = VALUES(status),
+            sort_order = VALUES(sort_order),
+            updated_time = NOW()
+    </insert>
+
+</mapper>

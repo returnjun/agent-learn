@@ -31,7 +31,12 @@ public class RootNode extends AbstractExecuteSupport {
         log.info("最大执行步数: {}", requestParameter.getMaxStep());
         log.info("会话ID: {}", requestParameter.getSessionId());
 
+        if (requestParameter.getAiAgentId() == null || requestParameter.getAiAgentId().isBlank()) {
+            throw new IllegalArgumentException("AI Agent ID 不能为空");
+        }
+
         Map<String, AiAgentClientFlowConfigVO> aiAgentClientFlowConfigVOMap = repository.queryAiAgentClientFlowConfig(requestParameter.getAiAgentId());
+        validateAgentFlowConfig(aiAgentClientFlowConfigVOMap, requestParameter.getAiAgentId());
 
         // 客户端对话组
         dynamicContext.setAiAgentClientFlowConfigVOMap(aiAgentClientFlowConfigVOMap);
@@ -40,7 +45,9 @@ public class RootNode extends AbstractExecuteSupport {
         // 当前任务信息
         dynamicContext.setCurrentTask(requestParameter.getMessage());
         // 最大任务步骤
-        dynamicContext.setMaxStep(requestParameter.getMaxStep());
+        if (requestParameter.getMaxStep() != null && requestParameter.getMaxStep() > 0) {
+            dynamicContext.setMaxStep(requestParameter.getMaxStep());
+        }
         return router(requestParameter, dynamicContext);
     }
 

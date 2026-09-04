@@ -59,8 +59,10 @@ DROP TABLE IF EXISTS `ai_agent_flow_config`;
 
 CREATE TABLE `ai_agent_flow_config` (
   `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键ID',
-  `agent_id` bigint NOT NULL COMMENT '智能体ID',
-  `client_id` bigint NOT NULL COMMENT '客户端ID',
+  `agent_id` varchar(64) NOT NULL COMMENT '智能体ID',
+  `client_id` varchar(64) NOT NULL COMMENT '客户端ID',
+  `client_name` varchar(50) NOT NULL COMMENT '客户端名称',
+  `client_type` varchar(64) NOT NULL COMMENT '客户端流程类型',
   `sequence` int NOT NULL COMMENT '序列号(执行顺序)',
   `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   PRIMARY KEY (`id`),
@@ -70,9 +72,12 @@ CREATE TABLE `ai_agent_flow_config` (
 LOCK TABLES `ai_agent_flow_config` WRITE;
 /*!40000 ALTER TABLE `ai_agent_flow_config` DISABLE KEYS */;
 
-INSERT INTO `ai_agent_flow_config` (`id`, `agent_id`, `client_id`, `sequence`, `create_time`)
+INSERT INTO `ai_agent_flow_config` (`id`, `agent_id`, `client_id`, `client_name`, `client_type`, `sequence`, `create_time`)
 VALUES
-	(1,1,3001,1,'2025-06-14 12:42:20');
+	(1,'1','3101','任务分析和状态判断','TASK_ANALYZER_CLIENT',1,'2025-06-14 12:42:20'),
+	(2,'1','3102','具体任务执行','PRECISION_EXECUTOR_CLIENT',2,'2025-06-14 12:42:20'),
+	(3,'1','3103','质量检查和优化','QUALITY_SUPERVISOR_CLIENT',3,'2025-06-14 12:42:20'),
+	(4,'1','3104','智能响应助手','RESPONSE_ASSISTANT',4,'2025-06-14 12:42:20');
 
 /*!40000 ALTER TABLE `ai_agent_flow_config` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -134,7 +139,11 @@ VALUES
 	(7,'3002','自动发帖和通知','自动生成CSDN文章，发送微信公众号消息通知',1,'2025-06-14 12:43:02','2025-06-14 12:43:02'),
 	(8,'3003','文件操作服务','文件操作服务',1,'2025-06-14 12:43:02','2025-06-14 12:43:02'),
 	(9,'3004','流式对话客户端','流式对话客户端',1,'2025-06-14 12:43:02','2025-06-14 12:43:02'),
-	(10,'3005','地图','地图',1,'2025-06-14 12:43:02','2025-06-14 12:43:02');
+	(10,'3005','地图','地图',1,'2025-06-14 12:43:02','2025-06-14 12:43:02'),
+	(11,'3101','任务分析和状态判断','Agent 任务分析客户端',1,'2025-06-14 12:43:02','2025-06-14 12:43:02'),
+	(12,'3102','具体任务执行','Agent 精准执行客户端',1,'2025-06-14 12:43:02','2025-06-14 12:43:02'),
+	(13,'3103','质量检查和优化','Agent 质量监督客户端',1,'2025-06-14 12:43:02','2025-06-14 12:43:02'),
+	(14,'3104','智能响应助手','Agent 最终响应客户端',1,'2025-06-14 12:43:02','2025-06-14 12:43:02');
 
 /*!40000 ALTER TABLE `ai_client` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -234,7 +243,11 @@ VALUES
 	(5,'client','3001','advisor','4001','\"\"',1,'2025-06-14 12:46:49','2025-06-14 12:49:46'),
 	(6,'client','3001','prompt','6001','\"\"',1,'2025-06-14 12:46:49','2025-06-14 12:50:13'),
 	(7,'client','3001','prompt','6002','\"\"',1,'2025-06-14 12:46:49','2025-06-14 12:50:13'),
-	(8,'client','3001','model','2001','\"\"',1,'2025-06-14 12:46:49','2025-06-14 12:50:13');
+	(8,'client','3001','model','2001','\"\"',1,'2025-06-14 12:46:49','2025-06-14 12:50:13'),
+	(9,'client','3101','model','2001','\"\"',1,'2025-06-14 12:46:49','2025-06-14 12:50:13'),
+	(10,'client','3102','model','2001','\"\"',1,'2025-06-14 12:46:49','2025-06-14 12:50:13'),
+	(11,'client','3103','model','2001','\"\"',1,'2025-06-14 12:46:49','2025-06-14 12:50:13'),
+	(12,'client','3104','model','2001','\"\"',1,'2025-06-14 12:46:49','2025-06-14 12:50:13');
 
 /*!40000 ALTER TABLE `ai_client_config` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -363,6 +376,43 @@ VALUES
 
 /*!40000 ALTER TABLE `ai_client_tool_mcp` ENABLE KEYS */;
 UNLOCK TABLES;
+
+
+# 转储表 ai_conversation
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `ai_conversation_message`;
+DROP TABLE IF EXISTS `ai_conversation`;
+
+CREATE TABLE `ai_conversation` (
+  `id` varchar(100) NOT NULL COMMENT '会话ID，由前端生成',
+  `mode` varchar(16) NOT NULL COMMENT '会话模式：chat、agent',
+  `title` varchar(200) NOT NULL DEFAULT '新的对话' COMMENT '会话标题',
+  `created_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx_mode_updated_time` (`mode`, `updated_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='前端会话记录表';
+
+
+# 转储表 ai_conversation_message
+# ------------------------------------------------------------
+
+CREATE TABLE `ai_conversation_message` (
+  `id` varchar(100) NOT NULL COMMENT '消息ID，由前端生成',
+  `conversation_id` varchar(100) NOT NULL COMMENT '会话ID',
+  `role` varchar(16) NOT NULL COMMENT '消息角色：user、assistant',
+  `content` longtext NOT NULL COMMENT 'Chat文本或Agent事件JSON',
+  `message_type` varchar(32) NOT NULL DEFAULT 'chat' COMMENT '消息类型：chat、agent',
+  `status` varchar(16) NOT NULL DEFAULT 'completed' COMMENT '生成状态',
+  `sort_order` bigint NOT NULL COMMENT '消息排序号',
+  `created_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx_conversation_order` (`conversation_id`, `sort_order`),
+  CONSTRAINT `fk_conversation_message_conversation`
+    FOREIGN KEY (`conversation_id`) REFERENCES `ai_conversation` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='前端会话消息表';
 
 
 

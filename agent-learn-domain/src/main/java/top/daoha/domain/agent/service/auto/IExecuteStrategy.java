@@ -1,5 +1,6 @@
 package top.daoha.domain.agent.service.auto;
 
+import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;
 import top.daoha.domain.agent.model.entity.ExecuteCommandEntity;
 
 /**
@@ -10,6 +11,6 @@ import top.daoha.domain.agent.model.entity.ExecuteCommandEntity;
  */
 public interface IExecuteStrategy {
 
-    void execute(ExecuteCommandEntity requestParameter) throws Exception;
+    void execute(ExecuteCommandEntity requestParameter, ResponseBodyEmitter emitter) throws Exception;
 
 }

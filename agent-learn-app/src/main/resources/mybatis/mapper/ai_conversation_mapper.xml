@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.daoha.infrastructure.dao.IAiConversationDao">
+
+    <resultMap id="AiConversationMap" type="top.daoha.infrastructure.dao.po.AiConversation">
+        <id column="id" property="id"/>
+        <result column="mode" property="mode"/>
+        <result column="title" property="title"/>
+        <result column="created_time" property="createdTime"/>
+        <result column="updated_time" property="updatedTime"/>
+    </resultMap>
+
+    <select id="queryList" resultMap="AiConversationMap">
+        SELECT id, mode, title, created_time, updated_time
+        FROM ai_conversation
+        <where>
+            <if test="mode != null and mode != ''">
+                mode = #{mode}
+            </if>
+        </where>
+        ORDER BY updated_time DESC
+    </select>
+
+    <select id="queryById" resultMap="AiConversationMap">
+        SELECT id, mode, title, created_time, updated_time
+        FROM ai_conversation
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insertOrUpdate" parameterType="top.daoha.infrastructure.dao.po.AiConversation">
+        INSERT INTO ai_conversation (id, mode, title, created_time, updated_time)
+        VALUES (#{id}, #{mode}, #{title}, NOW(), NOW())
+        ON DUPLICATE KEY UPDATE
+            mode = VALUES(mode),
+            title = VALUES(title),
+            updated_time = NOW()
+    </insert>
+
+    <update id="updateTitle">
+        UPDATE ai_conversation
+        SET title = #{title}, updated_time = NOW()
+        WHERE id = #{id}
+    </update>
+
+    <update id="updateTime">
+        UPDATE ai_conversation
+        SET updated_time = NOW()
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM ai_conversation
+        WHERE id = #{id}
+    </delete>
+
+    <select id="countById" resultType="java.lang.Integer">
+        SELECT COUNT(1)
+        FROM ai_conversation
+        WHERE id = #{id}
+    </select>
+
+</mapper>
